@@ -1,11 +1,16 @@
 import { createTheme } from "@mui/material";
 import oxanium from "../fonts/oxanium.ttf";
+import poiret from "../fonts/poiret.ttf";
+import yeseva from "../fonts/yeseva.ttf";
+import forum from "../fonts/forum.ttf";
+import calistoga from "../fonts/calistoga.ttf";
+import rakkas from "../fonts/rakkas.ttf";
+import baskerville from "../fonts/baskerville.ttf";
 
 let primary = createTheme({
-    borderRadius: "15px",
     palette: {
         background: {
-            default: "#F7DBA7",
+            default: "#FFFAE2",
             // default: "#291F1E",
         },
         text: {
@@ -22,6 +27,7 @@ let primary = createTheme({
         },
         custom: {
             light: "white",
+            decorative: "#949494",
             // lightMuted: "#e2e2e2",
             lightMuted: "#f2f2f2",
             dark: "#2d2d2d",
@@ -30,18 +36,53 @@ let primary = createTheme({
     },
     typography: {
         primary: {
-            accent: "Oxanium",
+            accent: "Yeseva",
         },
     },
     components: {
         MuiCssBaseline: {
             styleOverrides: `
         @font-face {
-          font-family: 'Oxanium';
+          font-family: 'Poiret';
           font-style: normal;
           font-display: swap;
           font-weight: 600;
-          src: local('Oxanium'), local('Oxanium-regular'), url(${oxanium}) format('truetype');
+          src: local('Poitret'), local('Poiret-regular'), url(${poiret}) format('truetype');
+        }
+        @font-face {
+          font-family: 'Yeseva';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: local('Yeseva'), local('Yeseva-regular'), url(${yeseva}) format('truetype');
+        }
+        @font-face {
+          font-family: 'Calistoga';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: local('Calistoga'), local('Calistoga-regular'), url(${calistoga}) format('truetype');
+        }
+        @font-face {
+          font-family: 'Rakkas';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: local('Rakkas'), local('Rakkas-regular'), url(${rakkas}) format('truetype');
+        }
+        @font-face {
+          font-family: 'Forum';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: local('Forum'), local('Forum-regular'), url(${forum}) format('truetype');
+        }
+        @font-face {
+          font-family: 'Baskerville';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: local('Baskerville'), local('Baskerville-regular'), url(${baskerville}) format('truetype');
         }
       `,
         },
@@ -52,7 +93,7 @@ primary = createTheme(primary, {
     typography: {
         h1: {
             fontFamily: primary.typography.primary.accent,
-            fontSize: "clamp(3rem, 5vw, 5rem)",
+            fontSize: "clamp(4rem, 9vw, 10rem)",
         },
         h2: {
             fontFamily: primary.typography.primary.accent,

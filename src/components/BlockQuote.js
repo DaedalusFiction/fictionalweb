@@ -19,7 +19,7 @@ const BlockQuote = () => {
                         sx={{ borderLeft: { xs: "none", md: primary.border } }}
                     >
                         <Box>
-                            <Typography sx={{ textEmphasis: "italic" }}>
+                            <Typography sx={{ fontStyle: "italic" }}>
                                 "Good fiction's job is to comfort the disturbed
                                 and disturb the comforted."
                             </Typography>

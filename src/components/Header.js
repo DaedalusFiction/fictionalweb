@@ -19,7 +19,7 @@ const Header = () => {
                 borderBottom: primary.border,
                 marginTop: "2rem",
                 position: "sticky",
-                top: "-18em",
+                top: "-27rem",
                 background: primary.palette.background.default,
                 zIndex: "5",
             }}

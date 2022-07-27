@@ -26,15 +26,15 @@ img {
 }
 
 .hero {
-    float: left;
-    clear: left;
+    float: right;
+    clear: right;
 }
 
 #inset {
     /* width: 100px; */
     /* height: 100px; */
     /* background: gray; */
-    margin: 0px 10px 15px 0px;
+    margin: 0px 0px 15px 10px;
 }
 
 #spacer {

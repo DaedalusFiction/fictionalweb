@@ -16,12 +16,16 @@ const Hero = () => {
             }}
         >
             <Box className="hero" id="spacer"></Box>
-            <Box className="hero" id="inset" sx={{ padding: "0 1rem 0 0" }}>
-                <Typography
-                    sx={{ color: "red", fontWeight: "bold", fontSize: "2rem" }}
+            <Box className="hero" id="inset" sx={{ padding: "0 1rem 0 1rem" }}>
+                {/* <Typography
+                    sx={{
+                        color: "red",
+                        fontWeight: "bold",
+                        fontSize: { xs: "1.25rem", md: "2rem" },
+                    }}
                 >
-                    Welcome to the
-                </Typography>
+                    welcome to the
+                </Typography> */}
                 <Typography
                     variant="h1"
                     sx={{
@@ -35,7 +39,8 @@ const Hero = () => {
                     variant="h1"
                     sx={{
                         lineHeight: ".85em",
-                        color: primary.palette.custom.dark,
+                        color: "red",
+                        textAlign: "end",
                     }}
                 >
                     WEB

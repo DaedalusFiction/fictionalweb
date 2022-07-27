@@ -18,10 +18,10 @@ const Header = () => {
                 borderTop: primary.border,
                 borderBottom: primary.border,
                 marginTop: "2rem",
-                marginBottom: "2rem",
                 position: "sticky",
                 top: "-18em",
                 background: primary.palette.background.default,
+                zIndex: "5",
             }}
         >
             <Container maxWidth="xl">
@@ -44,7 +44,7 @@ const Header = () => {
                                 marginBottom: "3em",
                             }}
                         >
-                            websites that tell the truth
+                            Websites that tell the truth.
                         </Typography>
                         <Typography variant="h3">F / W</Typography>
                     </Grid>

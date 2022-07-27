@@ -22,7 +22,7 @@ const Hero = () => {
                         textAlign: "end",
                     }}
                 >
-                    WEB
+                    WEB.
                 </Typography>
             </Box>
             <Typography variant="body2" sx={{ textAlign: "justify" }}>

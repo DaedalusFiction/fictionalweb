@@ -1,7 +1,8 @@
 import React from "react";
+import BlockQuote from "../components/BlockQuote";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import Info from "../components/Info";
+import Showcase from "../components/Showcase";
 import TextBreak from "../components/TextBreak";
 
 const Home = () => {
@@ -10,8 +11,9 @@ const Home = () => {
             <Hero />
             <Header />
             <TextBreak />
-            <Info />
+            <Showcase />
             <TextBreak />
+            <BlockQuote />
         </>
     );
 };

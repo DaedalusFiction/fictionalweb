@@ -30,8 +30,8 @@ let primary = createTheme({
             decorative: "#949494",
             // lightMuted: "#e2e2e2",
             lightMuted: "#f2f2f2",
-            dark: "#2d2d2d",
-            darkMuted: "#4f4f4f",
+            dark: "#373737",
+            darkMuted: "#575757",
         },
     },
     typography: {
@@ -116,12 +116,14 @@ primary = createTheme(primary, {
         },
         subtitle1: {
             color: primary.palette.custom.darkMuted,
+            // color: "yellow",
+            fontSize: "1.25rem",
         },
         subtitle2: {
             color: primary.palette.custom.darkMuted,
         },
         body1: {
-            fontSize: "1.5rem",
+            fontSize: "1.75rem",
             lineHeight: "1.25em",
             color: primary.palette.custom.darkMuted,
         },

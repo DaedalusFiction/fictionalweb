@@ -90,13 +90,18 @@ let primary = createTheme({
 });
 
 primary = createTheme(primary, {
+    border: "1px solid red",
     typography: {
         h1: {
             fontFamily: primary.typography.primary.accent,
+            color: primary.palette.custom.dark,
+            lineHeight: ".85em",
             fontSize: "clamp(4rem, 9vw, 10rem)",
         },
         h2: {
             fontFamily: primary.typography.primary.accent,
+            color: primary.palette.custom.dark,
+            fontSize: "clamp(3rem, 5vw, 10rem)",
         },
         h3: {
             fontFamily: primary.typography.primary.accent,
@@ -114,6 +119,16 @@ primary = createTheme(primary, {
         },
         subtitle2: {
             color: primary.palette.custom.darkMuted,
+        },
+        body1: {
+            fontSize: "1.5rem",
+            lineHeight: "1.25em",
+            color: primary.palette.custom.darkMuted,
+        },
+        body2: {
+            fontSize: "1.5rem",
+            lineHeight: "1.75em",
+            color: primary.palette.custom.decorative,
         },
     },
 });

@@ -1,5 +1,6 @@
 import React from "react";
 import BlockQuote from "../components/BlockQuote";
+import Editing from "../components/Editing";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Portfolio from "../components/Portfolio";
@@ -17,6 +18,8 @@ const Home = () => {
             <BlockQuote />
             <TextBreak />
             <Portfolio />
+            <TextBreak />
+            <Editing />
         </>
     );
 };

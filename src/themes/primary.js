@@ -123,7 +123,7 @@ primary = createTheme(primary, {
             color: primary.palette.custom.darkMuted,
         },
         body1: {
-            fontSize: "1.75rem",
+            fontSize: "1.25rem",
             lineHeight: "1.25em",
             color: primary.palette.custom.darkMuted,
         },

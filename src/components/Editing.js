@@ -14,38 +14,22 @@ const Showcase = () => {
         >
             <Container maxWidth="xl">
                 <Grid container sx={{ height: "30rem" }}>
-                    <Grid item xs={12} md={4}>
-                        <Box
-                            sx={{
-                                position: "sticky",
-                                top: "5rem",
-                                padding: "2rem 0",
-                            }}
-                        >
-                            <Typography variant="h2">
-                                Show, don't tell.
-                            </Typography>
-                        </Box>
-                    </Grid>
                     <Grid
                         item
                         xs={12}
                         md={8}
                         sx={{
-                            borderLeft: { xs: "none", md: primary.border },
                             padding: "1em",
                             display: "flex",
                             flexDirection: "column",
                             justifyContent: "space-between",
                         }}
                     >
-                        <Typography variant="body1" sx={{ maxWidth: "40ch" }}>
-                            Convincing customers and clients to like you isn't
-                            always easy. You can't just come out and tell them
-                            that you're trustworthy--you have to <em>show</em>{" "}
-                            them. How do you do that? You let them know you mean
-                            business by shelling out for a fancy website, that's
-                            how.
+                        <Typography variant="body1" sx={{ maxWidth: "43ch" }}>
+                            My background in newspaper and fiction editing has
+                            given me an eye for language. If you know what you
+                            want to tell people but aren't sure quite how to
+                            word it, I can help.
                         </Typography>
                         <Box
                             sx={{
@@ -56,18 +40,36 @@ const Showcase = () => {
                                 alignItems: "center",
                             }}
                         >
-                            <Typography sx={{ maxWidth: "40ch" }}>
-                                Except it can be a whole lot more affordable
-                                than you might think. Just don't tell anyone
-                                that.
+                            <Typography sx={{ maxWidth: "45ch" }}>
+                                Schedule a complementary strategy session today:
                             </Typography>
                             <Button
                                 size="large"
                                 endIcon={<ArrowRightAltIcon />}
                                 variant="outlined"
                             >
-                                Services
+                                Contact
                             </Button>
+                        </Box>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                        md={4}
+                        sx={{ borderLeft: { xs: "none", md: primary.border } }}
+                    >
+                        <Box
+                            sx={{
+                                position: "sticky",
+                                top: "5rem",
+
+                                padding: "2rem 0",
+                                textAlign: "end",
+                            }}
+                        >
+                            <Typography variant="h2">
+                                Writer's block?
+                            </Typography>
                         </Box>
                     </Grid>
                 </Grid>

@@ -19,38 +19,33 @@ const Showcase = () => {
                         xs={12}
                         md={8}
                         sx={{
-                            padding: "1em",
+                            padding: "3.5rem 1em",
                             display: "flex",
                             flexDirection: "column",
                             justifyContent: "space-between",
+                            alignItems: "end",
                         }}
                     >
-                        <Typography variant="body1" sx={{ maxWidth: "43ch" }}>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                maxWidth: "43ch",
+                                textAlign: { xs: "start", md: "end" },
+                            }}
+                        >
                             My background in newspaper and fiction editing has
                             given me an eye for language. If you know what you
                             want to tell people but aren't sure quite how to
                             word it, I can help.
                         </Typography>
-                        <Box
-                            sx={{
-                                display: "flex",
-                                justifyContent: "space-between",
-                                flexWrap: "wrap",
-                                gap: "2em",
-                                alignItems: "center",
-                            }}
+
+                        <Button
+                            size="large"
+                            endIcon={<ArrowRightAltIcon />}
+                            variant="outlined"
                         >
-                            <Typography sx={{ maxWidth: "45ch" }}>
-                                Schedule a complementary strategy session today:
-                            </Typography>
-                            <Button
-                                size="large"
-                                endIcon={<ArrowRightAltIcon />}
-                                variant="outlined"
-                            >
-                                Contact
-                            </Button>
-                        </Box>
+                            Contact
+                        </Button>
                     </Grid>
                     <Grid
                         item
@@ -62,9 +57,7 @@ const Showcase = () => {
                             sx={{
                                 position: "sticky",
                                 top: "5rem",
-
-                                padding: "2rem 0",
-                                textAlign: "end",
+                                padding: "2rem 0 0 1rem",
                             }}
                         >
                             <Typography variant="h2">

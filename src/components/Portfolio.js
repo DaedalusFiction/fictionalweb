@@ -27,24 +27,43 @@ const Portfolio = () => {
                 sx={{
                     padding: "2rem",
                     borderRight: { xs: "none", lg: primary.border },
-                    height: "35rem",
+                    borderBottom: primary.border,
                 }}
             >
-                <Box sx={{ position: "sticky", top: "7rem" }}>
-                    <Typography variant="body1">
-                        Websites need to be sharp and fancy. If they aren't
-                        sharp and fancy, people simply won't care.
-                    </Typography>
-                    <br />
-                    <Typography>
-                        That's why I make websites that are sharp and fancy.
-                        Just look at the one in the screenshot, or this one, the
-                        one you're looking at right now. Sharp and fancy, right?
-                    </Typography>
-                    <br />
-                    <Typography>I think so. And I hope you do too.</Typography>
-                    <br />
-                    <Button endIcon={<ArrowRightAltIcon />}>
+                <Box
+                    sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
+                        alignItems: "start",
+                        height: "35rem",
+                    }}
+                >
+                    <Box
+                        sx={{
+                            position: "sticky",
+                            top: "7rem",
+                            marginBottom: "3rem",
+                        }}
+                    >
+                        <Typography variant="body1">
+                            Websites need to be sharp and fancy. If they aren't
+                            sharp and fancy, people simply won't care.
+                        </Typography>
+                        <br />
+                        <Typography>
+                            That's why I make websites that are sharp and fancy.
+                            Just look at the one in the screenshot, or this one,
+                            the one you're looking at right now. Sharp and
+                            fancy, right?
+                        </Typography>
+                        <br />
+                        <Typography>
+                            I think so. And I hope you do too.
+                        </Typography>
+                        <br />
+                    </Box>
+                    <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
                         See Projects
                     </Button>
                 </Box>

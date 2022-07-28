@@ -18,11 +18,11 @@ const Showcase = () => {
                         <Box
                             sx={{
                                 position: "sticky",
-                                top: "5rem",
-                                padding: "2rem 0",
+                                top: "7rem",
+                                margin: "2rem 1rem 0 0",
                             }}
                         >
-                            <Typography variant="h2">
+                            <Typography variant="h2" sx={{ textAlign: "end" }}>
                                 Show, don't tell.
                             </Typography>
                         </Box>
@@ -33,7 +33,7 @@ const Showcase = () => {
                         md={8}
                         sx={{
                             borderLeft: { xs: "none", md: primary.border },
-                            padding: "1em",
+                            padding: "3.5rem 1rem",
                             display: "flex",
                             flexDirection: "column",
                             justifyContent: "space-between",

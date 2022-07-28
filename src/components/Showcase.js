@@ -26,9 +26,9 @@ const Showcase = () => {
                             <Typography variant="h2">
                                 Show, don't tell.
                             </Typography>
-                            <Typography variant="subtitle1">
+                            {/* <Typography variant="subtitle1">
                                 It applies to more than just writing.
-                            </Typography>
+                            </Typography> */}
                         </Box>
                     </Grid>
                     <Grid

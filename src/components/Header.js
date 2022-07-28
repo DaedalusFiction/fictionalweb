@@ -19,7 +19,7 @@ const Header = () => {
                 borderBottom: primary.border,
                 marginTop: "2rem",
                 position: "sticky",
-                top: "-27rem",
+                top: "-25rem",
                 background: primary.palette.background.default,
                 zIndex: "5",
             }}
@@ -35,13 +35,15 @@ const Header = () => {
                             flexFlow: "column",
                             justifyContent: "space-between",
                             padding: "1em 1em 0 0",
+                            height: "30rem",
                         }}
                     >
                         <Typography
                             variant="h2"
                             sx={{
                                 textAlign: "end",
-                                marginBottom: "3em",
+                                position: "sticky",
+                                top: "0",
                             }}
                         >
                             Websites that tell the truth.

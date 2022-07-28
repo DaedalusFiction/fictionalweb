@@ -11,7 +11,7 @@ const TextBreak = () => {
                 textAlign: "justify",
                 color: primary.palette.custom.decorative,
                 fontSize: "1.25rem",
-                height: "11rem",
+                height: "7rem",
                 overflow: "hidden",
                 margin: "1em 0",
             }}

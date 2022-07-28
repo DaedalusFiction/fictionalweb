@@ -17,7 +17,7 @@ const Portfolio = () => {
                 }}
             >
                 <Typography variant="h2">
-                    Write for your target audience.
+                    Give the people what they want.
                 </Typography>
             </Grid>
             <Grid
@@ -47,8 +47,9 @@ const Portfolio = () => {
                         }}
                     >
                         <Typography variant="body1">
-                            Websites need to be sharp and fancy. If they aren't
-                            sharp and fancy, people simply won't care.
+                            People want to look at websites that are sharp and
+                            fancy. If they aren't sharp and fancy, they simply
+                            won't care.
                         </Typography>
                         <br />
                         <Typography>
@@ -63,7 +64,11 @@ const Portfolio = () => {
                         </Typography>
                         <br />
                     </Box>
-                    <Button variant="outlined" endIcon={<ArrowRightAltIcon />}>
+                    <Button
+                        variant="outlined"
+                        size="large"
+                        endIcon={<ArrowRightAltIcon />}
+                    >
                         See Projects
                     </Button>
                 </Box>

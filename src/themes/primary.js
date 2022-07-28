@@ -133,6 +133,17 @@ primary = createTheme(primary, {
             color: primary.palette.custom.decorative,
         },
     },
+    components: {
+        // Name of the component
+        MuiButton: {
+            styleOverrides: {
+                // Name of the slot
+                root: {
+                    borderRadius: "0",
+                },
+            },
+        },
+    },
 });
 
 export { primary };

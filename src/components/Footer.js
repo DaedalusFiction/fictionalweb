@@ -22,88 +22,25 @@ const links = [
     },
 ];
 
-const credits = [
-    {
-        photo: "hero",
-        photographer: "Mitchell Kmetz",
-        service: "unsplash",
-    },
-    {
-        photo: "technologies",
-        photographer: "Flipboard",
-        service: "unsplash",
-    },
-    {
-        photo: "language",
-        photographer: "Laura Rivera",
-        service: "unsplash",
-    },
-    {
-        photo: "interpersonal",
-        photographer: "Nathan Dumlao",
-        service: "unsplash",
-    },
-    {
-        photo: "leadership",
-        photographer: "Ahmad",
-        service: "unsplash",
-    },
-    {
-        photo: "Adaptability",
-        photographer: "Erika Fletcher",
-        service: "unsplash",
-    },
-];
-
 const Footer = () => {
     return (
-        <Box
-            className="section-small"
-            sx={{ backgroundColor: primary.palette.custom.dark }}
-        >
-            <Container>
-                <Grid container spacing={1}>
-                    <Grid item xs={12} md={4}>
+        <Box sx={{ borderTop: primary.border }}>
+            <Container maxWidth="xl">
+                <Grid container>
+                    <Grid item xs={12} md={4} sx={{ padding: "2em" }}>
+                        <Typography variant="h3" component="h6">
+                            Pages
+                        </Typography>
+                        <br />
                         <Box
                             sx={{
                                 display: "flex",
                                 flexDirection: "column",
-                                alignItems: { xs: "center", md: "start" },
+                                gap: "1em",
                             }}
                         >
-                            <Typography
-                                variant="h6"
-                                sx={{
-                                    color: primary.palette.custom.light,
-                                    marginBottom: "1em",
-                                }}
-                            >
-                                My Websites
-                            </Typography>
-                            {links.map((item, index) => {
-                                return (
-                                    <a
-                                        key={index}
-                                        href={item.href}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <Typography
-                                            sx={{
-                                                color: primary.palette.custom
-                                                    .lightMuted,
-                                                fontSize: "1rem",
-                                                "&:hover": {
-                                                    color: primary.palette
-                                                        .custom.light,
-                                                },
-                                            }}
-                                            gutterBottom
-                                        >
-                                            {item.text}
-                                        </Typography>
-                                    </a>
-                                );
+                            {links.map((link) => {
+                                return <a href={link.href}>{link.text}</a>;
                             })}
                         </Box>
                     </Grid>
@@ -111,64 +48,45 @@ const Footer = () => {
                         item
                         xs={12}
                         md={4}
-                        sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "end",
-                        }}
+                        sx={{ padding: "2em", borderLeft: primary.border }}
                     >
-                        <Typography
+                        <Typography variant="h3" component="h6">
+                            Pages
+                        </Typography>
+                        <br />
+                        <Box
                             sx={{
-                                fontSize: ".8rem",
-                                color: primary.palette.custom.light,
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: "1em",
                             }}
                         >
-                            Website created by
-                        </Typography>
-                        <a
-                            href="https://davidjsorensen.com"
-                            target="_BLANK"
-                            rel="noreferrer"
-                        >
-                            <Typography
-                                sx={{
-                                    fontSize: ".8rem",
-                                    color: primary.palette.custom.light,
-                                    "&:hover": {
-                                        color: primary.palette.custom
-                                            .lightMuted,
-                                    },
-                                    textDecoration: "underline",
-                                    marginLeft: ".25em",
-                                }}
-                            >
-                                David J. Sorensen
-                            </Typography>
-                        </a>
+                            {links.map((link) => {
+                                return <a href={link.href}>{link.text}</a>;
+                            })}
+                        </Box>
                     </Grid>
                     <Grid
                         item
                         xs={12}
                         md={4}
-                        sx={{
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "end",
-                            alignItems: { xs: "center", md: "end" },
-                        }}
+                        sx={{ padding: "2em", borderLeft: primary.border }}
                     >
-                        {credits.map((credit) => (
-                            <Typography
-                                sx={{
-                                    fontSize: ".8rem",
-                                    color: primary.palette.custom.lightMuted,
-                                    textTransform: "capitalize",
-                                }}
-                            >
-                                {credit.photo} photo by {credit.photographer} on{" "}
-                                {credit.service}
-                            </Typography>
-                        ))}
+                        <Typography variant="h3" component="h6">
+                            Pages
+                        </Typography>
+                        <br />
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: "1em",
+                            }}
+                        >
+                            {links.map((link) => {
+                                return <a href={link.href}>{link.text}</a>;
+                            })}
+                        </Box>
                     </Grid>
                 </Grid>
             </Container>

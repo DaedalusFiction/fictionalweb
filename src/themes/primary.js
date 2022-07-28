@@ -105,6 +105,7 @@ primary = createTheme(primary, {
         },
         h3: {
             fontFamily: primary.typography.primary.accent,
+            color: primary.palette.custom.dark,
         },
         h5: {
             color: primary.palette.text.secondary,

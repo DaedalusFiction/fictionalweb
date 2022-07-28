@@ -29,18 +29,22 @@ const Footer = () => {
                 <Grid container>
                     <Grid item xs={12} md={4} sx={{ padding: "2em" }}>
                         <Typography variant="h3" component="h6">
-                            Pages
+                            Pages.
                         </Typography>
                         <br />
                         <Box
                             sx={{
                                 display: "flex",
                                 flexDirection: "column",
-                                gap: "1em",
+                                gap: ".5em",
                             }}
                         >
                             {links.map((link) => {
-                                return <a href={link.href}>{link.text}</a>;
+                                return (
+                                    <a className="link-footer" href={link.href}>
+                                        {link.text}
+                                    </a>
+                                );
                             })}
                         </Box>
                     </Grid>
@@ -51,18 +55,22 @@ const Footer = () => {
                         sx={{ padding: "2em", borderLeft: primary.border }}
                     >
                         <Typography variant="h3" component="h6">
-                            Pages
+                            My websites.
                         </Typography>
                         <br />
                         <Box
                             sx={{
                                 display: "flex",
                                 flexDirection: "column",
-                                gap: "1em",
+                                gap: ".5em",
                             }}
                         >
                             {links.map((link) => {
-                                return <a href={link.href}>{link.text}</a>;
+                                return (
+                                    <a className="link-footer" href={link.href}>
+                                        {link.text}
+                                    </a>
+                                );
                             })}
                         </Box>
                     </Grid>
@@ -73,18 +81,22 @@ const Footer = () => {
                         sx={{ padding: "2em", borderLeft: primary.border }}
                     >
                         <Typography variant="h3" component="h6">
-                            Pages
+                            Social media.
                         </Typography>
                         <br />
                         <Box
                             sx={{
                                 display: "flex",
                                 flexDirection: "column",
-                                gap: "1em",
+                                gap: ".5em",
                             }}
                         >
                             {links.map((link) => {
-                                return <a href={link.href}>{link.text}</a>;
+                                return (
+                                    <a className="link-footer" href={link.href}>
+                                        {link.text}
+                                    </a>
+                                );
                             })}
                         </Box>
                     </Grid>

@@ -5,7 +5,7 @@
 
 :root {
     --color: #949494;
-    --color: #575757;
+    --fc-muted: #575757;
 }
 
 @font-face {
@@ -72,4 +72,14 @@ img {
 
 .screencap:hover {
     transform: scale(0.98);
+}
+
+.link-footer {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--fc-muted);
+}
+.link-footer:hover {
+    color: black;
 }

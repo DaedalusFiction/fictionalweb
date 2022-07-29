@@ -10,7 +10,8 @@ import baskerville from "../fonts/baskerville.ttf";
 let primary = createTheme({
     palette: {
         background: {
-            default: "#FFFAE2",
+            // default: "#FFFAE2",
+            default: "#fffcea",
             // default: "#291F1E",
         },
         text: {
@@ -27,11 +28,13 @@ let primary = createTheme({
         },
         custom: {
             light: "white",
-            decorative: "#949494",
+            decorative: "#b6b19b",
             // lightMuted: "#e2e2e2",
             lightMuted: "#f2f2f2",
-            dark: "#373737",
-            darkMuted: "#575757",
+            // dark: "#373737",
+            dark: "#4a4941", //good one
+            // darkMuted: "#575757",
+            darkMuted: "#5e5c52",
         },
     },
     typography: {
@@ -101,7 +104,7 @@ primary = createTheme(primary, {
         h2: {
             fontFamily: primary.typography.primary.accent,
             color: primary.palette.custom.dark,
-            fontSize: "clamp(3rem, 5vw, 10rem)",
+            fontSize: "clamp(3rem, 4vw, 10rem)",
         },
         h3: {
             fontFamily: primary.typography.primary.accent,

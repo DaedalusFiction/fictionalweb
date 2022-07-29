@@ -13,7 +13,7 @@ const Showcase = () => {
             }}
         >
             <Container maxWidth="xl">
-                <Grid container sx={{ height: "30rem" }}>
+                <Grid container>
                     <Grid item xs={12} md={4}>
                         <Box
                             sx={{

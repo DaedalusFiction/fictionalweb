@@ -34,7 +34,7 @@ const Showcase = () => {
                             }}
                         >
                             My background in newspaper and fiction editing has
-                            given me an eye for language. If you know what you
+                            given me an ear for language. If you know what you
                             want to tell people but aren't sure quite how to
                             word it, I can help.
                         </Typography>

@@ -81,5 +81,5 @@ img {
     color: var(--fc-muted);
 }
 .link-footer:hover {
-    color: black;
+    color: #fffcea;
 }

@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import sicktoothScreencap from "../images/sicktoothScreencap.avif";
 import { primary } from "../themes/primary";
@@ -16,9 +16,11 @@ const Portfolio = () => {
                     padding: "5rem 0",
                 }}
             >
-                <Typography variant="h2">
-                    Give the people what they want.
-                </Typography>
+                <Container maxWidth="xl">
+                    <Typography variant="h2" align="center">
+                        Write for your audience.
+                    </Typography>
+                </Container>
             </Grid>
             <Grid
                 item
@@ -36,26 +38,24 @@ const Portfolio = () => {
                         flexDirection: "column",
                         justifyContent: "space-between",
                         alignItems: "start",
-                        height: "35rem",
                     }}
                 >
                     <Box
                         sx={{
-                            position: "sticky",
                             top: "7rem",
                             marginBottom: "3rem",
                         }}
                     >
                         <Typography variant="body1">
                             People want to look at websites that are sharp and
-                            fancy. If they aren't sharp and fancy, they simply
-                            won't care.
+                            fancy. If your website isn't sharp and fancy, then
+                            they simply won't care.
                         </Typography>
                         <br />
                         <Typography>
                             That's why I make websites that are sharp and fancy.
-                            Just look at the one in the screenshot, or this one,
-                            the one you're looking at right now. Sharp and
+                            Just look at the one in this screenshot, or this
+                            one, the one you're looking at right now. Sharp and
                             fancy, right?
                         </Typography>
                         <br />
@@ -83,6 +83,7 @@ const Portfolio = () => {
                     backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
   url(${sicktoothScreencap})`,
                     backgroundSize: "cover",
+                    minHeight: "15rem",
                 }}
             ></Grid>
         </Grid>

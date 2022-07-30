@@ -13,7 +13,12 @@ const Showcase = () => {
             }}
         >
             <Container maxWidth="xl">
-                <Grid container sx={{ height: "30rem" }}>
+                <Grid
+                    container
+                    sx={{
+                        height: { xs: "25rem", md: "30rem" },
+                    }}
+                >
                     <Grid
                         item
                         xs={12}
@@ -51,7 +56,10 @@ const Showcase = () => {
                         item
                         xs={12}
                         md={4}
-                        sx={{ borderLeft: { xs: "none", md: primary.border } }}
+                        sx={{
+                            display: { xs: "none", md: "block" },
+                            borderLeft: { xs: "none", md: primary.border },
+                        }}
                     >
                         <Box
                             sx={{

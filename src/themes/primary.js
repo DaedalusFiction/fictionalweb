@@ -6,6 +6,9 @@ import forum from "../fonts/forum.ttf";
 import calistoga from "../fonts/calistoga.ttf";
 import rakkas from "../fonts/rakkas.ttf";
 import baskerville from "../fonts/baskerville.ttf";
+import inconsolata from "../fonts/Inconsolata_SemiExpanded-Light.ttf";
+import inconsolataMedium from "../fonts/Inconsolata_SemiExpanded-Medium.ttf";
+import inconsolataRegular from "../fonts/Inconsolata_SemiExpanded-Regular.ttf";
 
 let primary = createTheme({
     palette: {
@@ -40,6 +43,9 @@ let primary = createTheme({
     typography: {
         primary: {
             accent: "Yeseva",
+            decorative: "InconsolataRegular",
+            // main: "InconsolataMedium",
+            main: "InconsolataRegular",
         },
     },
     components: {
@@ -87,6 +93,27 @@ let primary = createTheme({
           font-weight: 600;
           src: local('Baskerville'), local('Baskerville-regular'), url(${baskerville}) format('truetype');
         }
+        @font-face {
+          font-family: 'inconsolata';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: local('inconsolata'), local('inconsolata'), url(${inconsolata}) format('truetype');
+        }
+        @font-face {
+          font-family: 'inconsolataMedium';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: local('inconsolataMedium'), local('inconsolataMedium'), url(${inconsolataMedium}) format('truetype');
+        }
+        @font-face {
+          font-family: 'inconsolataRegular';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 600;
+          src: local('inconsolataRegular'), local('inconsolataRegular'), url(${inconsolataRegular}) format('truetype');
+        }
       `,
         },
     },
@@ -130,11 +157,13 @@ primary = createTheme(primary, {
             fontSize: "1.25rem",
             lineHeight: "1.25em",
             color: primary.palette.custom.darkMuted,
+            fontFamily: primary.typography.primary.main,
         },
         body2: {
             fontSize: "1.5rem",
             lineHeight: "1.75em",
             color: primary.palette.custom.decorative,
+            fontFamily: primary.typography.primary.decorative,
         },
     },
     components: {

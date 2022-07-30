@@ -175,7 +175,7 @@ const Header = () => {
                 borderBottom: primary.border,
                 position: "sticky",
 
-                top: "-29rem",
+                top: { xs: "0", md: "-29rem" },
 
                 backgroundColor: primary.palette.background.default,
                 zIndex: "5",
@@ -189,12 +189,33 @@ const Header = () => {
                         md={2}
                         sx={{ display: "flex", alignItems: "end" }}
                     >
-                        <Typography
-                            variant="h3"
-                            sx={{ marginTop: { xs: "0", sm: "10em" } }}
-                        >
-                            F / W
-                        </Typography>
+                        <Box sx={{ display: "flex", gap: ".5em" }}>
+                            <Typography
+                                variant="h3"
+                                sx={{
+                                    marginTop: { xs: "0", sm: "10em" },
+                                }}
+                            >
+                                F
+                            </Typography>
+                            <Typography
+                                variant="h3"
+                                sx={{
+                                    marginTop: { xs: "0", sm: "10em" },
+                                }}
+                            >
+                                /
+                            </Typography>
+                            <Typography
+                                variant="h3"
+                                sx={{
+                                    marginTop: { xs: "0", sm: "10em" },
+                                    color: "red",
+                                }}
+                            >
+                                W
+                            </Typography>
+                        </Box>
                     </Grid>
                     <Grid
                         item
@@ -235,10 +256,25 @@ const Header = () => {
                         lg={4}
                         sx={{
                             display: "flex",
-                            alignItems: "end",
+                            flexDirection: "column",
+                            justifyContent: "space-between",
                             borderLeft: primary.border,
                         }}
                     >
+                        <Box
+                            sx={{
+                                padding: "2em",
+                                display: { xs: "none", md: "block" },
+                            }}
+                        >
+                            <Typography>
+                                "Good fiction's job is to comfort the disturbed
+                                and disturb the comfortable."
+                            </Typography>
+                            <Typography sx={{ textAlign: "end" }}>
+                                --David Foster Wallace
+                            </Typography>
+                        </Box>
                         <Box
                             sx={{
                                 display: { xs: "none", md: "flex" },

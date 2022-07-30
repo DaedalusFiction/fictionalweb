@@ -10,7 +10,7 @@ const TextBreak = () => {
             sx={{
                 textAlign: "justify",
                 color: primary.palette.custom.decorative,
-                fontSize: "1.25rem",
+                fontSize: "1rem",
                 height: "7rem",
                 overflow: "hidden",
                 margin: "1em 0",

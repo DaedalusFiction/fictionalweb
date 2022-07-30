@@ -52,7 +52,11 @@ const Footer = () => {
                         item
                         xs={12}
                         md={4}
-                        sx={{ padding: "2em", borderLeft: primary.border }}
+                        sx={{
+                            padding: "2em",
+                            borderLeft: { xs: "none", md: primary.border },
+                            borderTop: { xs: primary.border, md: "none" },
+                        }}
                     >
                         <Typography variant="h3" component="h6">
                             My websites.
@@ -78,7 +82,11 @@ const Footer = () => {
                         item
                         xs={12}
                         md={4}
-                        sx={{ padding: "2em", borderLeft: primary.border }}
+                        sx={{
+                            padding: "2em",
+                            borderLeft: { xs: "none", md: primary.border },
+                            borderTop: { xs: primary.border, md: "none" },
+                        }}
                     >
                         <Typography variant="h3" component="h6">
                             Social media.

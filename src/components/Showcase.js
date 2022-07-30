@@ -22,7 +22,10 @@ const Showcase = () => {
                                 margin: "2rem 1rem 0 0",
                             }}
                         >
-                            <Typography variant="h2" sx={{ textAlign: "end" }}>
+                            <Typography
+                                variant="h2"
+                                sx={{ textAlign: { xs: "center", md: "end" } }}
+                            >
                                 Show, don't tell.
                             </Typography>
                         </Box>
@@ -35,7 +38,7 @@ const Showcase = () => {
                             borderLeft: { xs: "none", md: primary.border },
                             padding: "3.5rem 1rem",
                             display: "flex",
-                            gap: "2em",
+                            gap: "5em",
                             flexDirection: "column",
                             justifyContent: "space-between",
                         }}

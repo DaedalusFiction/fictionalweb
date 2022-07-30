@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <Box
             sx={{
-                height: "98.5vh",
+                height: "100vh",
                 overflow: "hidden",
             }}
         >

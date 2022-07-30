@@ -119,6 +119,8 @@ const Footer = () => {
                                                 <a
                                                     className="link-footer"
                                                     href={link.href}
+                                                    target="_BLANK"
+                                                    rel="noreferrer"
                                                 >
                                                     {link.text}
                                                 </a>

@@ -12,69 +12,66 @@ const Showcase = () => {
                 borderBottom: primary.border,
             }}
         >
-            <Container maxWidth="xl">
+            <Grid
+                container
+                sx={{
+                    height: { xs: "25rem", md: "30rem" },
+                }}
+            >
                 <Grid
-                    container
+                    item
+                    xs={12}
+                    md={8}
                     sx={{
-                        height: { xs: "25rem", md: "30rem" },
+                        padding: "1em",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
+                        alignItems: "end",
                     }}
                 >
-                    <Grid
-                        item
-                        xs={12}
-                        md={8}
+                    <Typography
+                        variant="body1"
                         sx={{
-                            padding: "1em",
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "space-between",
-                            alignItems: "end",
+                            maxWidth: "43ch",
+                            textAlign: { xs: "start", md: "end" },
                         }}
                     >
-                        <Typography
-                            variant="body1"
-                            sx={{
-                                maxWidth: "43ch",
-                                textAlign: { xs: "start", md: "end" },
-                            }}
-                        >
-                            My background in newspaper and fiction editing has
-                            given me an ear for language. If you know what you
-                            want to tell people but aren't sure quite how to
-                            word it, I can help.
-                        </Typography>
+                        My background in newspaper and fiction editing has given
+                        me an ear for language. If you know what you want to
+                        tell people but aren't sure quite how to word it, I can
+                        help.
+                    </Typography>
 
-                        <Button
-                            size="large"
-                            endIcon={<ArrowRightAltIcon />}
-                            variant="outlined"
-                        >
-                            Contact
-                        </Button>
-                    </Grid>
-                    <Grid
-                        item
-                        xs={12}
-                        md={4}
+                    <Button
+                        size="large"
+                        endIcon={<ArrowRightAltIcon />}
+                        variant="outlined"
+                    >
+                        Contact
+                    </Button>
+                </Grid>
+                <Grid
+                    className="gradient"
+                    item
+                    xs={12}
+                    md={4}
+                    sx={{
+                        display: { xs: "none", md: "block" },
+                        borderLeft: { xs: "none", md: primary.border },
+                    }}
+                >
+                    <Box
                         sx={{
-                            display: { xs: "none", md: "block" },
-                            borderLeft: { xs: "none", md: primary.border },
+                            position: "sticky",
+                            top: "5rem",
+                            padding: "2rem 0 0 1rem",
                         }}
                     >
-                        <Box
-                            sx={{
-                                position: "sticky",
-                                top: "5rem",
-                                padding: "2rem 0 0 1rem",
-                            }}
-                        >
-                            <Typography variant="h2">
-                                Writer's block?
-                            </Typography>
-                        </Box>
-                    </Grid>
+                        <Typography variant="h2">Writer's block?</Typography>
+                    </Box>
                 </Grid>
-            </Container>
+            </Grid>
         </Box>
     );
 };

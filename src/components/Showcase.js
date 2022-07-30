@@ -14,6 +14,7 @@ const Showcase = () => {
         >
             <Grid container>
                 <Grid
+                    className="gradient"
                     item
                     xs={12}
                     md={4}
@@ -81,6 +82,28 @@ const Showcase = () => {
                         >
                             Services
                         </Button>
+                    </Box>
+                </Grid>
+                <Grid
+                    className="flex-center"
+                    item
+                    xs={12}
+                    sx={{ borderTop: primary.border, padding: "3rem 1rem" }}
+                >
+                    <Box sx={{ maxWidth: "45ch" }}>
+                        <Typography
+                            gutterBottom
+                            sx={{ textAlign: { xs: "center", md: "start" } }}
+                        >
+                            “If only there could be an invention that bottled up
+                            a memory, like scent. And it never faded, and it
+                            never got stale. And then, when one wanted it, the
+                            bottle could be uncorked, and it would be like
+                            living the moment all over again.”
+                        </Typography>
+                        <Typography sx={{ textAlign: "end" }}>
+                            --Daphne du Maurier, Rebecca
+                        </Typography>
                     </Box>
                 </Grid>
             </Grid>

@@ -7,7 +7,7 @@ const Portfolio = () => {
     return (
         <Grid container>
             <Grid
-                className="flex-center"
+                className="gradient"
                 item
                 xs={12}
                 sx={{

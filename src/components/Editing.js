@@ -21,7 +21,7 @@ const Showcase = () => {
                 <Grid
                     item
                     xs={12}
-                    md={8}
+                    md={7}
                     sx={{
                         padding: "1em",
                         display: "flex",
@@ -55,7 +55,7 @@ const Showcase = () => {
                     className="gradient"
                     item
                     xs={12}
-                    md={4}
+                    md={5}
                     sx={{
                         display: { xs: "none", md: "block" },
                         borderLeft: { xs: "none", md: primary.border },

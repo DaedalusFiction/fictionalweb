@@ -2,38 +2,39 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import sicktoothScreencap from "../images/sicktoothScreencap.avif";
 import { primary } from "../themes/primary";
+import BlockQuote from "./BlockQuote";
+
+const quote = {
+    body: "There have been great societies that did not use the wheel, but there have been no societies that did not tell stories",
+    author: "Ursula le Guin",
+};
 
 const Portfolio = () => {
     return (
-        <Grid container>
-            <Grid
-                className="gradient"
-                item
-                xs={12}
-                sx={{
-                    borderBottom: primary.border,
-                    borderTop: primary.border,
-                    padding: "5rem 0",
-                }}
-            >
-                <Container maxWidth="xl">
-                    <Typography variant="h2" align="center">
-                        Write for your audience.
-                    </Typography>
-                </Container>
-            </Grid>
-            <Grid
-                item
-                xs={12}
-                lg={4}
-                sx={{
-                    padding: "2rem",
-                    borderRight: { xs: "none", lg: primary.border },
-                    borderBottom: primary.border,
-                }}
-            >
-                <Box
+        <Box sx={{ borderTop: primary.border, borderBottom: primary.border }}>
+            <Grid container>
+                <Grid
+                    className="gradient"
+                    item
+                    xs={12}
                     sx={{
+                        borderBottom: primary.border,
+                        padding: "5rem 0",
+                    }}
+                >
+                    <Container maxWidth="xl">
+                        <Typography variant="h2" align="center">
+                            Write for your audience.
+                        </Typography>
+                    </Container>
+                </Grid>
+                <Grid
+                    item
+                    xs={12}
+                    lg={4}
+                    sx={{
+                        padding: "2rem",
+                        borderRight: { xs: "none", lg: primary.border },
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
@@ -42,6 +43,7 @@ const Portfolio = () => {
                 >
                     <Box
                         sx={{
+                            position: "sticky",
                             top: "7rem",
                             marginBottom: "3rem",
                         }}
@@ -64,29 +66,52 @@ const Portfolio = () => {
                         </Typography>
                         <br />
                     </Box>
-                    <Button
-                        variant="outlined"
-                        size="large"
-                        endIcon={<ArrowRightAltIcon />}
+                    <Box
+                        sx={{
+                            display: "flex",
+                            width: "100%",
+                            justifyContent: { xs: "center", md: "end" },
+                        }}
                     >
-                        See Projects
-                    </Button>
-                </Box>
+                        <Button
+                            variant="outlined"
+                            size="large"
+                            endIcon={<ArrowRightAltIcon />}
+                        >
+                            See Projects
+                        </Button>
+                    </Box>
+                </Grid>
+                <Grid
+                    item
+                    xs={12}
+                    lg={8}
+                    sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
+                    }}
+                >
+                    <Typography
+                        variant="h2"
+                        sx={{
+                            margin: "2rem",
+                            textAlign: { xs: "center", md: "right" },
+                        }}
+                    >
+                        SICKTOOTH
+                    </Typography>
+                    <img
+                        style={{ objectFit: "cover" }}
+                        src={sicktoothScreencap}
+                        alt="sicktooth website screenshot"
+                    />
+                    <Box className="flex-center" sx={{ padding: "2em 0" }}>
+                        <BlockQuote quote={quote} />
+                    </Box>
+                </Grid>
             </Grid>
-            <Grid
-                className="flex-center"
-                item
-                xs={12}
-                lg={8}
-                sx={{
-                    // backgroundImage: `url(${earth})`,
-                    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-  url(${sicktoothScreencap})`,
-                    backgroundSize: "cover",
-                    minHeight: "15rem",
-                }}
-            ></Grid>
-        </Grid>
+        </Box>
     );
 };
 

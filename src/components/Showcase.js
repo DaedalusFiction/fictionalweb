@@ -3,6 +3,12 @@ import { Container } from "@mui/system";
 import React from "react";
 import { primary } from "../themes/primary";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import BlockQuote from "./BlockQuote";
+
+const quote = {
+    body: "If only there could be an invention that bottled up a memory, like scent. And it never faded, and it never got stale, and then, when one wanted it, the bottle could be uncorked, and it would be like living the moment all over again.",
+    author: "Daphne du Maurier",
+};
 
 const Showcase = () => {
     return (
@@ -90,21 +96,7 @@ const Showcase = () => {
                     xs={12}
                     sx={{ borderTop: primary.border, padding: "3rem 1rem" }}
                 >
-                    <Box sx={{ maxWidth: "45ch" }}>
-                        <Typography
-                            gutterBottom
-                            sx={{ textAlign: { xs: "center", md: "start" } }}
-                        >
-                            “If only there could be an invention that bottled up
-                            a memory, like scent. And it never faded, and it
-                            never got stale. And then, when one wanted it, the
-                            bottle could be uncorked, and it would be like
-                            living the moment all over again.”
-                        </Typography>
-                        <Typography sx={{ textAlign: "end" }}>
-                            --Daphne du Maurier, Rebecca
-                        </Typography>
-                    </Box>
+                    <BlockQuote quote={quote} />
                 </Grid>
             </Grid>
         </Box>

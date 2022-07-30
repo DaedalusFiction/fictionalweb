@@ -6,13 +6,16 @@ import { primary } from "../themes/primary";
 const TextBreak = () => {
     return (
         <Box
-            sx={{ background: "rgba(167, 154, 82, 0.035)", padding: "1rem 0" }}
+            sx={{
+                background: primary.palette.background.decorative,
+                padding: "1rem 0",
+            }}
         >
             <Typography
                 variant="body2"
                 sx={{
                     textAlign: "justify",
-                    color: primary.palette.custom.decorative,
+                    color: primary.palette.custom.lightMuted,
                     fontSize: "1rem",
                     height: "7rem",
                     overflow: "hidden",

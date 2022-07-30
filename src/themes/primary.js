@@ -15,6 +15,7 @@ let primary = createTheme({
         background: {
             // default: "#FFFAE2",
             default: "#fffcea",
+            decorative: "#4a4941",
             // default: "#291F1E",
         },
         text: {
@@ -30,10 +31,10 @@ let primary = createTheme({
             main: "#3A86FF",
         },
         custom: {
-            light: "white",
+            light: "#fffcea",
             decorative: "#b6b19b",
             // lightMuted: "#e2e2e2",
-            lightMuted: "#f2f2f2",
+            lightMuted: "#e5e0bb",
             // dark: "#373737",
             dark: "#4a4941", //good one
             // darkMuted: "#575757",

@@ -127,7 +127,7 @@ primary = createTheme(primary, {
             fontFamily: primary.typography.primary.accent,
             color: primary.palette.custom.dark,
             lineHeight: ".85em",
-            fontSize: "clamp(4rem, 9vw, 10rem)",
+            fontSize: "clamp(4rem, 9vw, 7rem)",
         },
         h2: {
             fontFamily: primary.typography.primary.accent,

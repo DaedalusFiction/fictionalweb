@@ -5,7 +5,7 @@ import { primary } from "../themes/primary";
 import BlockQuote from "./BlockQuote";
 
 const quote = {
-    body: "There have been great societies that did not use the wheel, but there have been no societies that did not tell stories",
+    body: "There have been great societies that did not use the wheel, but there have been no societies that did not tell stories.",
     author: "Ursula le Guin",
 };
 
@@ -23,7 +23,7 @@ const Portfolio = () => {
                     }}
                 >
                     <Container maxWidth="xl">
-                        <Typography variant="h2" align="center">
+                        <Typography variant="h1" align="center">
                             Write for your audience.
                         </Typography>
                     </Container>

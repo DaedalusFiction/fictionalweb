@@ -12,36 +12,47 @@ const Showcase = () => {
                 borderBottom: primary.border,
             }}
         >
-            <Grid
-                container
-                sx={{
-                    height: { xs: "25rem", md: "30rem" },
-                }}
-            >
+            <Grid container>
                 <Grid
                     item
                     xs={12}
-                    md={7}
+                    md={6}
                     sx={{
                         padding: "1em",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
                         alignItems: "end",
+                        gap: "8rem",
                     }}
                 >
-                    <Typography
-                        variant="body1"
+                    <Box
                         sx={{
-                            maxWidth: "43ch",
-                            textAlign: { xs: "start", md: "end" },
+                            position: "sticky",
+                            top: "7rem",
+                            marginBottom: "5rem",
                         }}
                     >
-                        My background in newspaper and fiction editing has given
-                        me an ear for language. If you know what you want to
-                        tell people but aren't sure quite how to word it, I can
-                        help.
-                    </Typography>
+                        <Typography
+                            variant="h3"
+                            sx={{ textAlign: { xs: "center", md: "end" } }}
+                            gutterBottom
+                        >
+                            Writer's Block?
+                        </Typography>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                maxWidth: "43ch",
+                                textAlign: { xs: "start", md: "end" },
+                            }}
+                        >
+                            My background in newspaper and fiction editing has
+                            given me an ear for language. If you know what you
+                            want to tell people but aren't sure quite how to
+                            word it, I can help.
+                        </Typography>
+                    </Box>
 
                     <Button
                         size="large"
@@ -55,9 +66,8 @@ const Showcase = () => {
                     className="gradient"
                     item
                     xs={12}
-                    md={5}
+                    md={6}
                     sx={{
-                        display: { xs: "none", md: "block" },
                         borderLeft: { xs: "none", md: primary.border },
                     }}
                 >
@@ -65,10 +75,13 @@ const Showcase = () => {
                         sx={{
                             position: "sticky",
                             top: "5rem",
-                            padding: "2rem 0 0 1rem",
+                            padding: "2rem",
                         }}
                     >
-                        <Typography variant="h2">Writer's block?</Typography>
+                        <Typography variant="h1">
+                            You won't know what your story is about until it's
+                            finished.
+                        </Typography>
                     </Box>
                 </Grid>
             </Grid>

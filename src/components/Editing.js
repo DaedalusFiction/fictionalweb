@@ -24,7 +24,7 @@ const Showcase = () => {
                         xs={12}
                         md={8}
                         sx={{
-                            padding: "3.5rem 1em",
+                            padding: "1em",
                             display: "flex",
                             flexDirection: "column",
                             justifyContent: "space-between",

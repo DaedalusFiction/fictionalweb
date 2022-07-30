@@ -35,6 +35,7 @@ const Showcase = () => {
                             borderLeft: { xs: "none", md: primary.border },
                             padding: "3.5rem 1rem",
                             display: "flex",
+                            gap: "2em",
                             flexDirection: "column",
                             justifyContent: "space-between",
                         }}

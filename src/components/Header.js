@@ -174,7 +174,9 @@ const Header = () => {
                 borderTop: primary.border,
                 borderBottom: primary.border,
                 position: "sticky",
-                top: { xs: "0", sm: "-30em" },
+
+                top: "-29rem",
+
                 backgroundColor: primary.palette.background.default,
                 zIndex: "5",
             }}
@@ -207,12 +209,23 @@ const Header = () => {
                             variant="h2"
                             sx={{
                                 textAlign: "end",
-                                position: "sticky",
-                                top: "0",
+                                // position: "sticky",
+                                // top: "0",
                                 margin: ".25em .25em 0 0",
                             }}
                         >
-                            Websites that tell the truth.
+                            Websites that
+                        </Typography>
+                        <Typography
+                            variant="h2"
+                            sx={{
+                                textAlign: "end",
+                                position: "sticky",
+                                top: "0",
+                                margin: "0 .25em 0 0",
+                            }}
+                        >
+                            tell stories.
                         </Typography>
                     </Grid>
                     <Grid
@@ -221,10 +234,9 @@ const Header = () => {
                         md={6}
                         lg={4}
                         sx={{
+                            display: "flex",
                             alignItems: "end",
                             borderLeft: primary.border,
-                            display: "flex",
-                            justifyContent: "end",
                         }}
                     >
                         <Box

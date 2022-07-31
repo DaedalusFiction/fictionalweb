@@ -1,15 +1,12 @@
-import { Container } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import Header from "../components/Header";
+import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
 
 const Contact = () => {
-    return (
-        <Box
-            className="flex-center section"
-            sx={{ backgroundColor: primary.palette.custom.light }}
-        ></Box>
-    );
+    return <></>;
 };
 
 export default Contact;

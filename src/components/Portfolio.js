@@ -43,7 +43,7 @@ const Portfolio = () => {
                 >
                     <Box
                         sx={{
-                            position: "sticky",
+                            position: { xs: "static", md: "sticky" },
                             top: "7rem",
                             marginBottom: "3rem",
                         }}
@@ -90,6 +90,7 @@ const Portfolio = () => {
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
+                        borderTop: { xs: primary.border, md: "none" },
                     }}
                 >
                     <Typography
@@ -112,7 +113,7 @@ const Portfolio = () => {
                             alt="sicktooth website screenshot"
                         />
                     </a>
-                    <Box className="flex-center" sx={{ padding: "2em 0" }}>
+                    <Box sx={{ padding: "2em 1em" }}>
                         <BlockQuote quote={quote} />
                     </Box>
                 </Grid>

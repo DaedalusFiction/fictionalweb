@@ -98,15 +98,14 @@ const Header = () => {
                     lg={6}
                     sx={{
                         display: { xs: "none", md: "block" },
+                        padding: primary.custom.spacing.paragraph,
+                        paddingBottom: "0",
                     }}
                 >
                     <Typography
                         variant="h3"
                         sx={{
                             textAlign: "end",
-                            // position: "sticky",
-                            // top: "0",
-                            margin: ".25em .25em 0 0",
                         }}
                     >
                         Websites that
@@ -117,7 +116,6 @@ const Header = () => {
                             textAlign: "end",
                             position: "sticky",
                             top: ".5em",
-                            margin: "0 .25em 0 0",
                         }}
                     >
                         tell stories.

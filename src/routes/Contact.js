@@ -6,7 +6,11 @@ import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
 
 const Contact = () => {
-    return <></>;
+    return (
+        <>
+            <Header />
+        </>
+    );
 };
 
 export default Contact;

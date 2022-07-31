@@ -124,8 +124,8 @@ primary = createTheme(primary, {
     border: "1px solid red",
     custom: {
         spacing: {
-            paragraph: "1rem",
-            quote: "2rem",
+            paragraph: "2rem",
+            quote: "3rem",
         },
     },
     typography: {

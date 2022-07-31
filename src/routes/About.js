@@ -19,6 +19,7 @@ const About = () => {
             >
                 <Grid container>
                     <Grid
+                        className="gradient"
                         item
                         xs={12}
                         md={7}
@@ -102,7 +103,6 @@ const About = () => {
                         <Box
                             className="flex-center"
                             sx={{
-                                padding: primary.custom.spacing.paragraph,
                                 borderRight: {
                                     xs: "none",
                                     md: primary.border,

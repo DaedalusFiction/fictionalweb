@@ -113,7 +113,7 @@ const Portfolio = () => {
                             alt="sicktooth website screenshot"
                         />
                     </a>
-                    <Box sx={{ padding: primary.custom.spacing.paragraph }}>
+                    <Box>
                         <BlockQuote quote={quote} />
                     </Box>
                 </Grid>

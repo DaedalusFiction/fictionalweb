@@ -137,7 +137,6 @@ const Header = () => {
                 >
                     <Box
                         sx={{
-                            padding: primary.custom.spacing.paragraph,
                             display: { xs: "none", md: "block" },
                         }}
                     >

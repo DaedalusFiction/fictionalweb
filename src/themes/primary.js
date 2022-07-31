@@ -125,6 +125,7 @@ primary = createTheme(primary, {
     custom: {
         spacing: {
             paragraph: "1rem",
+            quote: "2rem",
         },
     },
     typography: {

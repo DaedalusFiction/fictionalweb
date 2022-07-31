@@ -93,6 +93,6 @@ img {
 .gradient {
     background-image: linear-gradient(
         rgb(255, 252, 234),
-        rgba(167, 154, 82, 0.035)
+        rgba(167, 154, 82, 0.065)
     );
 }

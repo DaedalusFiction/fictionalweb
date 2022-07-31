@@ -93,7 +93,7 @@ const Showcase = () => {
                     className="flex-center"
                     item
                     xs={12}
-                    sx={{ borderTop: primary.border, padding: "3rem 1rem" }}
+                    sx={{ borderTop: primary.border }}
                 >
                     <BlockQuote quote={quote} />
                 </Grid>

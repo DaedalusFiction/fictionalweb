@@ -33,7 +33,7 @@ const Portfolio = () => {
                     xs={12}
                     md={4}
                     sx={{
-                        padding: "2rem",
+                        padding: primary.custom.spacing.paragraph,
                         borderRight: { xs: "none", md: primary.border },
                         display: "flex",
                         flexDirection: "column",
@@ -113,7 +113,7 @@ const Portfolio = () => {
                             alt="sicktooth website screenshot"
                         />
                     </a>
-                    <Box sx={{ padding: "2em 1em" }}>
+                    <Box sx={{ padding: primary.custom.spacing.paragraph }}>
                         <BlockQuote quote={quote} />
                     </Box>
                 </Grid>

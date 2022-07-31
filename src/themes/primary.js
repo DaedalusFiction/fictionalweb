@@ -122,12 +122,17 @@ let primary = createTheme({
 
 primary = createTheme(primary, {
     border: "1px solid red",
+    custom: {
+        spacing: {
+            paragraph: "1em",
+        },
+    },
     typography: {
         h1: {
             fontFamily: primary.typography.primary.accent,
             color: primary.palette.custom.dark,
             lineHeight: ".85em",
-            fontSize: "clamp(4rem, 9vw, 7rem)",
+            fontSize: "clamp(3.5rem, 9vw, 7rem)",
         },
         h2: {
             fontFamily: primary.typography.primary.accent,
@@ -174,6 +179,14 @@ primary = createTheme(primary, {
                 // Name of the slot
                 root: {
                     borderRadius: "0",
+                },
+            },
+        },
+        MuiChip: {
+            styleOverrides: {
+                // Name of the slot
+                root: {
+                    backgroundColor: primary.palette.custom.dark,
                 },
             },
         },

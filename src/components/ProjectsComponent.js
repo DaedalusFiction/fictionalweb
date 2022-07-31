@@ -59,7 +59,7 @@ const Projects = () => {
                 variant="h1"
                 sx={{ marginBottom: ".5em", textAlign: "center" }}
             >
-                My Projects
+                All writing is rewriting.
             </Typography>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={4}>
@@ -71,17 +71,16 @@ const Projects = () => {
                                     handleClick(project);
                                 }}
                                 sx={{
-                                    borderRadius: primary.borderRadius,
                                     // marginBottom: ".5em",
                                     padding: ".5em .75em",
-                                    margin: ".25em 0",
-                                    backgroundColor:
+                                    border:
                                         project.name === currentProject.name
-                                            ? primary.palette.custom.lightMuted
-                                            : "inherit",
+                                            ? primary.border
+                                            : "1px solid " +
+                                              primary.palette.background
+                                                  .default,
                                     "&:hover": {
-                                        backgroundColor:
-                                            primary.palette.custom.lightMuted,
+                                        border: primary.border,
                                     },
                                     cursor: "pointer",
                                 }}

@@ -39,7 +39,7 @@ const Showcase = () => {
                         }}
                     >
                         <Typography
-                            variant="h2"
+                            variant="h1"
                             sx={{
                                 textAlign: { xs: "center", md: "end" },
                             }}
@@ -54,7 +54,7 @@ const Showcase = () => {
                     md={7}
                     sx={{
                         borderLeft: { xs: "none", md: primary.border },
-                        padding: "1rem",
+                        padding: primary.custom.spacing.paragraph,
                         display: "flex",
                         gap: "8em",
                         flexDirection: "column",

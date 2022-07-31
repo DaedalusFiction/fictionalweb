@@ -98,7 +98,7 @@ const Footer = () => {
                                     gap: ".5em",
                                 }}
                             >
-                                {section.name === "Pages" &&
+                                {section.name === "Pages." &&
                                     section.items.map((link) => {
                                         return (
                                             <Link
@@ -108,23 +108,30 @@ const Footer = () => {
                                                     navigateToTop();
                                                 }}
                                             >
-                                                {link.text}
+                                                <Typography
+                                                    sx={{
+                                                        textTransform:
+                                                            "uppercase",
+                                                    }}
+                                                >
+                                                    {link.text}
+                                                </Typography>
                                             </Link>
                                         );
                                     })}
-                                {section.name !== "Pages" &&
+                                {section.name !== "Pages." &&
                                     section.items.map((link) => {
                                         return (
-                                            <Typography key={link.href}>
-                                                <a
-                                                    className="link-footer"
-                                                    href={link.href}
-                                                    target="_BLANK"
-                                                    rel="noreferrer"
-                                                >
+                                            <a
+                                                className="link-footer"
+                                                href={link.href}
+                                                target="_BLANK"
+                                                rel="noreferrer"
+                                            >
+                                                <Typography>
                                                     {link.text}
-                                                </a>
-                                            </Typography>
+                                                </Typography>
+                                            </a>
                                         );
                                     })}
                             </Box>

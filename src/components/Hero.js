@@ -26,82 +26,39 @@ const Hero = () => {
                 </Typography>
             </Box>
             <Typography variant="body2" sx={{ textAlign: "justify" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatibus exercitationem amet culpa nihil maiores qui
-                aspernatur harum, aliquid magnam. Ab mollitia exercitationem
-                dolorum corrupti adipisci est itaque, deleniti ex. Ut amet nisi
-                maxime veritatis temporibus minus odio, sunt possimus reiciendis
-                tempora cum expedita quis tenetur, enim repellat, inventore
-                corrupti architecto eveniet exercitationem hic assumenda! Eos
-                consectetur corrupti deserunt voluptates voluptate et maxime
-                expedita quia eaque eius ut, esse ex? Quibusdam, pariatur!
-                Mollitia nisi ratione repellendus eius saepe? Libero, provident,
-                saepe sequi dolore qui perspiciatis accusantium dolores
-                consequuntur quo ipsam, et est. Sit delectus maiores cupiditate
-                velit exercitationem, non amet dolorem nam soluta quidem illum
-                reiciendis eveniet nesciunt rem corporis eius dicta ullam,
-                quisquam provident sequi. Quos, quas tenetur. Nobis atque eum
-                deleniti ipsam cupiditate nemo assumenda velit sed aliquam,
-                laborum provident fugit, iure maiores cumque magni in sint eaque
-                ullam sequi! Suscipit optio aperiam quidem accusamus hic
-                voluptates accusantium harum nisi rem ratione. Illo illum
-                architecto non repellendus? Doloribus corporis, ratione nam,
-                accusamus incidunt neque iste rem assumenda soluta illum
-                laboriosam deleniti possimus excepturi quam explicabo,
-                repellendus debitis molestiae. Illo, architecto. Qui autem
-                libero aliquam saepe ab dolor obcaecati esse voluptate inventore
-                accusamus ut quam perferendis, temporibus nulla asperiores
-                voluptates laborum cum, iste fuga et. Nesciunt asperiores,
-                impedit esse at consequatur doloremque ducimus eos
-                exercitationem incidunt repudiandae, quae cupiditate quis labore
-                tempora amet eveniet ratione natus ex accusantium atque! Beatae
-                placeat illo consequuntur iste reprehenderit laborum autem earum
-                provident, repudiandae inventore sunt ex doloremque hic nemo
-                ipsam voluptatum est tempore, molestiae nisi velit. Optio
-                dolorum enim accusantium vero quos amet tempora voluptatum
-                consequatur ipsam? Doloremque, voluptatum vitae veritatis
-                officiis error magni voluptatem maxime nostrum obcaecati? Ipsam,
-                quia aspernatur. Minus a corporis maxime laborum ut, adipisci
-                nisi architecto harum eos reiciendis consequatur, cupiditate
-                impedit voluptas quas facere debitis nobis, mollitia provident.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatibus exercitationem amet culpa nihil maiores qui
-                aspernatur harum, aliquid magnam. Ab mollitia exercitationem
-                dolorum corrupti adipisci est itaque, deleniti ex. Ut amet nisi
-                maxime veritatis temporibus minus odio, sunt possimus reiciendis
-                tempora cum expedita quis tenetur, enim repellat, inventore
-                corrupti architecto eveniet exercitationem hic assumenda! Eos
-                consectetur corrupti deserunt voluptates voluptate et maxime
-                expedita quia eaque eius ut, esse ex? Quibusdam, pariatur!
-                Mollitia nisi ratione repellendus eius saepe? Libero, provident,
-                saepe sequi dolore qui perspiciatis accusantium dolores
-                consequuntur quo ipsam, et est. Sit delectus maiores cupiditate
-                velit exercitationem, non amet dolorem nam soluta quidem illum
-                reiciendis eveniet nesciunt rem corporis eius dicta ullam,
-                quisquam provident sequi. Quos, quas tenetur. Nobis atque eum
-                deleniti ipsam cupiditate nemo assumenda velit sed aliquam,
-                laborum provident fugit, iure maiores cumque magni in sint eaque
-                ullam sequi! Suscipit optio aperiam quidem accusamus hic
-                voluptates accusantium harum nisi rem ratione. Illo illum
-                architecto non repellendus? Doloribus corporis, ratione nam,
-                accusamus incidunt neque iste rem assumenda soluta illum
-                laboriosam deleniti possimus excepturi quam explicabo,
-                repellendus debitis molestiae. Illo, architecto. Qui autem
-                libero aliquam saepe ab dolor obcaecati esse voluptate inventore
-                accusamus ut quam perferendis, temporibus nulla asperiores
-                voluptates laborum cum, iste fuga et. Nesciunt asperiores,
-                impedit esse at consequatur doloremque ducimus eos
-                exercitationem incidunt repudiandae, quae cupiditate quis labore
-                tempora amet eveniet ratione natus ex accusantium atque! Beatae
-                placeat illo consequuntur iste reprehenderit laborum autem earum
-                provident, repudiandae inventore sunt ex doloremque hic nemo
-                ipsam voluptatum est tempore, molestiae nisi velit. Optio
-                dolorum enim accusantium vero quos amet tempora voluptatum
-                consequatur ipsam? Doloremque, voluptatum vitae veritatis
-                officiis error magni voluptatem maxime nostrum obcaecati? Ipsam,
-                quia aspernatur. Minus a corporis maxime laborum ut, adipisci
-                nisi architecto harum eos reiciendis consequatur, cupiditate
-                impedit voluptas quas facere debitis nobis, mollitia provident.
+                My soul is more than matched; she's overmanned; and by a madman!
+                Insufferable sting, that sanity should not ground arms on such a
+                field! But he drilled deep down, and blasted all my reason out
+                of me! I think I see his impious end; but feel that I must help
+                him to it. Will I, nill I, the ineffable thing has tied me to
+                him; tows me with a cable I have no knife to cut. Horrible old
+                man! Who's over him, he cries;--aye, he would be a democrat to
+                all above; look, how he lords it over all below! Oh! I plainly
+                see my miserable office,--to obey, rebelling; and worse yet, to
+                hate with touch of pity! For in his eyes I read some lurid woe
+                would shrivel me up, had I it. Yet is there hope. Time and tide
+                flow wide. The hated whale has the round watery world to swim
+                in, as the small gold-fosh has its glassy globe. His
+                heaven-insulting purpose, God may wedge aside. I would up heart,
+                were it not like lead. But my whole clock's run down; my heart
+                the all-controlling weight, I have no key to lift again. [
+                <em>A burst of revelry from the forecastle</em>] Oh, God! to
+                sail with such a heathen crew that have small touch of human
+                mothers in them! Whelped somewhere by the sharkish sea. The
+                white whale is their demigorgon. Hark! the infernal orgies! that
+                revelry is forward! mark the unfaltering silence aft! Methinks
+                it pictures life. Foremost through the sparkling sea shoots on
+                the gay, embattled, bandering bow, but only to drag dark Ahab
+                after it, where he broods within his sternward cabing, builded
+                over the dead waters of the wake, and further on, hunted by its
+                wolfish gurglings. The long howl thrills me through! Peace! ye
+                revellers, and set the watch! Oh, life! 'tis in an hour like
+                this, with soul beat down and held to knowledge,--as wild,
+                untutored things are forced to feed--Oh, life! 'tis now that I
+                do feel the latent horrir in thee! but 'tis not me! that
+                horror's out of me! and with the soft feeling of the human in
+                me, yet will I try to fight ye, ye grim, phantom futures! Stand
+                by me, hold me, bind me, O ye blessed influences!
             </Typography>
         </Box>
     );

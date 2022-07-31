@@ -13,13 +13,19 @@ import { Link } from "react-router-dom";
 import { primary } from "../themes/primary";
 import MenuIcon from "@mui/icons-material/Menu";
 import { navigateToTop } from "../utils/utils";
+import BlockQuote from "./BlockQuote";
 
 const routes = [
-    { location: "Projects", to: "/projects" },
+    { location: "Home", to: "/" },
     { location: "About", to: "/about" },
-    { location: "Testimonials", to: "/testimonials" },
+    { location: "Projects", to: "/projects" },
     { location: "Contact", to: "/contact" },
 ];
+
+const quote = {
+    body: "Good fiction's job is to comfort the disturbed and disturb the comforted.",
+    author: "David Foster Wallace",
+};
 
 const Header = () => {
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -131,17 +137,11 @@ const Header = () => {
                 >
                     <Box
                         sx={{
-                            padding: "2em",
+                            padding: primary.custom.spacing.paragraph,
                             display: { xs: "none", md: "block" },
                         }}
                     >
-                        <Typography gutterBottom>
-                            "Good fiction's job is to comfort the disturbed and
-                            disturb the comfortable."
-                        </Typography>
-                        <Typography sx={{ textAlign: "end" }}>
-                            --David Foster Wallace
-                        </Typography>
+                        <BlockQuote quote={quote} />
                     </Box>
                     <Box
                         sx={{
@@ -151,7 +151,13 @@ const Header = () => {
                     >
                         {routes.map((route) => {
                             return (
-                                <Link key={route.location} to={route.to}>
+                                <Link
+                                    key={route.location}
+                                    to={route.to}
+                                    onClick={() => {
+                                        navigateToTop();
+                                    }}
+                                >
                                     <Button sx={{ tabIndex: "-1" }}>
                                         {route.location}
                                     </Button>

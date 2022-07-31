@@ -6,6 +6,7 @@
 :root {
     --color: #949494;
     --fc-muted: #575757;
+    --decorative-accent: #e5e0bb;
 }
 
 @font-face {
@@ -24,6 +25,7 @@ a {
 img {
     width: 100%;
     height: auto;
+    filter: sepia(40%);
 }
 
 .hero {
@@ -44,7 +46,7 @@ img {
 }
 
 .section {
-    padding: 8rem 0;
+    padding: 4rem 0;
 }
 .section-small {
     padding: 4rem 0;

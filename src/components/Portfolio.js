@@ -31,10 +31,10 @@ const Portfolio = () => {
                 <Grid
                     item
                     xs={12}
-                    lg={4}
+                    md={4}
                     sx={{
                         padding: "2rem",
-                        borderRight: { xs: "none", lg: primary.border },
+                        borderRight: { xs: "none", md: primary.border },
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
@@ -85,7 +85,7 @@ const Portfolio = () => {
                 <Grid
                     item
                     xs={12}
-                    lg={8}
+                    md={8}
                     sx={{
                         display: "flex",
                         flexDirection: "column",
@@ -101,11 +101,17 @@ const Portfolio = () => {
                     >
                         SICKTOOTH
                     </Typography>
-                    <img
-                        style={{ objectFit: "cover" }}
-                        src={sicktoothScreencap}
-                        alt="sicktooth website screenshot"
-                    />
+                    <a
+                        href="https://sicktooth.com"
+                        target="_BLANK"
+                        rel="noreferrer"
+                    >
+                        <img
+                            style={{ objectFit: "cover" }}
+                            src={sicktoothScreencap}
+                            alt="sicktooth website screenshot"
+                        />
+                    </a>
                     <Box className="flex-center" sx={{ padding: "2em 0" }}>
                         <BlockQuote quote={quote} />
                     </Box>

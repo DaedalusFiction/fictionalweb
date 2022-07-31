@@ -1,37 +1,54 @@
-import { Container, Grid, Typography } from "@mui/material";
+import ArrowRightAlt from "@mui/icons-material/ArrowRightAlt";
+import { Button, Container, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { Link } from "react-router-dom";
+import BlockQuote from "../components/BlockQuote";
 import Header from "../components/Header";
 import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
+import { navigateToTop } from "../utils/utils";
+
+const quote = { author: "me", body: "writing sucks" };
 const About = () => {
     return (
         <>
             <Header />
-            <Box sx={{ borderBottom: primary.border }}>
-                <Container maxWidth="xl">
-                    <Grid container>
-                        <Grid
-                            item
-                            xs={12}
-                            md={7}
+            <TextBreak />
+            <Box
+                sx={{ borderTop: primary.border, borderBottom: primary.border }}
+            >
+                <Grid container>
+                    <Grid
+                        item
+                        xs={12}
+                        md={7}
+                        sx={{
+                            borderRight: { xs: "none", md: primary.border },
+                        }}
+                    >
+                        <Typography
+                            className="sticky"
+                            variant="h1"
+                            align="right"
                             sx={{
-                                borderRight: { xs: "none", md: primary.border },
+                                margin: primary.custom.spacing.paragraph,
                             }}
                         >
-                            <Typography
-                                variant="h1"
-                                align="right"
-                                sx={{
-                                    margin: primary.custom.spacing.paragraph,
-                                }}
-                            >
-                                CONFESSION:
-                            </Typography>
-                        </Grid>
-                        <Grid item xs={12} md={5}>
+                            CONFESSION:
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12} md={5}>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "space-between",
+                                margin: primary.custom.spacing.paragraph,
+                            }}
+                        >
                             <Box
                                 sx={{
-                                    margin: primary.custom.spacing.paragraph,
+                                    paddingBottom: "8em",
                                 }}
                             >
                                 <Typography>
@@ -64,9 +81,47 @@ const About = () => {
                                     So make sure you tell it well.
                                 </Typography>
                             </Box>
-                        </Grid>
+                            <Link
+                                to="/contact"
+                                onClick={() => {
+                                    navigateToTop();
+                                }}
+                            >
+                                <Button
+                                    variant="outlined"
+                                    size="large"
+                                    sx={{ tabIndex: "-1" }}
+                                    endIcon={<ArrowRightAlt />}
+                                >
+                                    Contact
+                                </Button>
+                            </Link>
+                        </Box>
                     </Grid>
-                </Container>
+                    <Grid item xs={12} md={6}>
+                        <Box
+                            className="flex-center"
+                            sx={{
+                                padding: primary.custom.spacing.paragraph,
+                                borderRight: {
+                                    xs: "none",
+                                    md: primary.border,
+                                },
+                                borderTop: primary.border,
+                            }}
+                        >
+                            <BlockQuote quote={quote} />
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <Box
+                            sx={{
+                                padding: primary.custom.spacing.paragraph,
+                                borderTop: primary.border,
+                            }}
+                        ></Box>
+                    </Grid>
+                </Grid>
             </Box>
             <TextBreak />
         </>

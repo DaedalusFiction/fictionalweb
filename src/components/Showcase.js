@@ -32,10 +32,9 @@ const Showcase = () => {
                     }}
                 >
                     <Box
+                        className="sticky"
                         sx={{
-                            position: "sticky",
-                            top: "7rem",
-                            padding: "1rem",
+                            padding: primary.custom.spacing.paragraph,
                         }}
                     >
                         <Typography
@@ -74,7 +73,7 @@ const Showcase = () => {
                             justifyContent: "space-between",
                             flexWrap: "wrap",
                             gap: "2em",
-                            alignItems: "center",
+                            alignItems: "end",
                         }}
                     >
                         <Typography sx={{ maxWidth: "40ch" }}>

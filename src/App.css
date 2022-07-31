@@ -45,6 +45,11 @@ img {
     height: 200px;
 }
 
+.sticky {
+    position: sticky;
+    top: 7rem;
+}
+
 .section {
     padding: 4rem 0;
 }
@@ -69,7 +74,6 @@ img {
 
 .screencap {
     transition: transform 0.2s;
-    border-radius: 10px;
 }
 
 .screencap:hover {

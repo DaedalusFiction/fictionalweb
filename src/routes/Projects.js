@@ -9,10 +9,9 @@ const Projects = () => {
     return (
         <Box sx={{ backgroundColor: primary.palette.custom.light }}>
             <Header />
+            <TextBreak />
             <Box sx={{ borderBottom: primary.border }}>
-                <Container maxWidth="xl">
-                    <ProjectsComponent />
-                </Container>
+                <ProjectsComponent />
             </Box>
             <TextBreak />
         </Box>

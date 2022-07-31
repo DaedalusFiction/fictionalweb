@@ -9,6 +9,13 @@ import { primary } from "../themes/primary";
 
 const projects = [
     {
+        name: "SICKTOOTH",
+        url: "https://www.sicktooth.com",
+        image: sicktoothScreencap,
+        description: "Literary Journal",
+        technologies: ["React", "MUI", "Firebase", "Markdown"],
+    },
+    {
         name: "Streamerize",
         url: "https://www.streamerize.com",
         image: streamerizeScreencap,
@@ -22,13 +29,6 @@ const projects = [
         image: forumScreencap,
         description: "Customizeable Message Board Template",
         technologies: ["React", "Redux", "MUI", "Firebase"],
-    },
-    {
-        name: "SICKTOOTH",
-        url: "https://www.sicktooth.com",
-        image: sicktoothScreencap,
-        description: "Literary Journal",
-        technologies: ["React", "MUI", "Firebase", "Markdown"],
     },
     {
         name: "KDA PFDD",
@@ -54,14 +54,57 @@ const Projects = () => {
     };
 
     return (
-        <Box className="section">
-            <Typography
-                variant="h1"
-                sx={{ marginBottom: ".5em", textAlign: "center" }}
-            >
-                All writing is rewriting.
-            </Typography>
-            <Grid container spacing={2}>
+        <Box>
+            <Grid container>
+                <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    sx={{
+                        borderTop: primary.border,
+                        borderBottom: primary.border,
+                        borderRight: { xs: "none", md: primary.border },
+                        padding: primary.custom.spacing.paragraph,
+                        display: "flex",
+                        justifyContent: "end",
+                        paddingBottom: "8rem",
+                    }}
+                >
+                    <Box>
+                        <Box sx={{ maxWidth: "45ch" }}>
+                            <Typography align="right">
+                                Walt Whitman never stopped writing{" "}
+                                <em>Leaves of Grass</em>. He published it first
+                                in 1855 and then rewrote it eight(-ish) more
+                                times over the next four decades.
+                            </Typography>
+                            <br />
+                            <Typography align="right">
+                                Your website should continue to grow as you do.
+                                That's why when you hire Fictional Web, you
+                                aren't just getting a website.
+                            </Typography>
+                            <br />
+                            <Typography align="right">
+                                You're getting a partnership.
+                            </Typography>
+                        </Box>
+                    </Box>
+                </Grid>
+                <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    sx={{
+                        borderTop: { xs: "none", md: primary.border },
+                        borderBottom: primary.border,
+                        padding: primary.custom.spacing.paragraph,
+                    }}
+                >
+                    <Typography variant="h1" sx={{ maxWidth: "10rem" }}>
+                        All writing is rewriting.
+                    </Typography>
+                </Grid>
                 <Grid item xs={12} md={4}>
                     {projects.map((project, index) => {
                         return (
@@ -162,9 +205,6 @@ const Projects = () => {
                                         }}
                                         src={currentProject.image}
                                         alt={`Screenshot of ${currentProject.name} website`}
-                                        style={{
-                                            borderRadius: primary.borderRadius,
-                                        }}
                                     />
                                 </a>
                             </Slide>

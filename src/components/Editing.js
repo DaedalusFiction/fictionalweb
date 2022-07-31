@@ -76,6 +76,7 @@ const Showcase = () => {
                             position: "sticky",
                             top: "5rem",
                             padding: "2rem",
+                            borderTop: { xs: primary.border, md: "none" },
                         }}
                     >
                         <Typography variant="h1">

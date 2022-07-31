@@ -38,7 +38,7 @@ const Header = () => {
                 borderBottom: primary.border,
                 position: "sticky",
 
-                top: { xs: "0", md: "-29rem" },
+                top: { xs: "0", md: "-23em" },
 
                 backgroundColor: primary.palette.background.default,
                 zIndex: "5",
@@ -56,11 +56,11 @@ const Header = () => {
                         paddingLeft: ".5em",
                     }}
                 >
-                    <Box sx={{ display: "flex", gap: ".5em" }}>
+                    <Box sx={{ display: "flex", gap: ".5rem" }}>
                         <Typography
                             variant="h3"
                             sx={{
-                                marginTop: { xs: "0", sm: "10em" },
+                                marginTop: { xs: "0", md: "10em" },
                             }}
                         >
                             F
@@ -68,7 +68,7 @@ const Header = () => {
                         <Typography
                             variant="h3"
                             sx={{
-                                marginTop: { xs: "0", sm: "10em" },
+                                marginTop: { xs: "0", md: "10em" },
                             }}
                         >
                             /
@@ -76,7 +76,7 @@ const Header = () => {
                         <Typography
                             variant="h3"
                             sx={{
-                                marginTop: { xs: "0", sm: "10em" },
+                                marginTop: { xs: "0", md: "10em" },
                                 color: "red",
                             }}
                         >
@@ -95,7 +95,7 @@ const Header = () => {
                     }}
                 >
                     <Typography
-                        variant="h2"
+                        variant="h3"
                         sx={{
                             textAlign: "end",
                             // position: "sticky",
@@ -106,11 +106,11 @@ const Header = () => {
                         Websites that
                     </Typography>
                     <Typography
-                        variant="h2"
+                        variant="h3"
                         sx={{
                             textAlign: "end",
                             position: "sticky",
-                            top: "0",
+                            top: ".5em",
                             margin: "0 .25em 0 0",
                         }}
                     >

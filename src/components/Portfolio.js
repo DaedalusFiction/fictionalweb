@@ -3,6 +3,8 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import sicktoothScreencap from "../images/sicktoothScreencap.avif";
 import { primary } from "../themes/primary";
 import BlockQuote from "./BlockQuote";
+import { navigateToTop } from "../utils/utils";
+import { Link } from "react-router-dom";
 
 const quote = {
     body: "There have been great societies that did not use the wheel, but there have been no societies that did not tell stories.",
@@ -73,13 +75,21 @@ const Portfolio = () => {
                             justifyContent: { xs: "center", md: "end" },
                         }}
                     >
-                        <Button
-                            variant="outlined"
-                            size="large"
-                            endIcon={<ArrowRightAltIcon />}
+                        <Link
+                            to="/projects"
+                            onClick={() => {
+                                navigateToTop();
+                            }}
                         >
-                            See Projects
-                        </Button>
+                            <Button
+                                size="large"
+                                endIcon={<ArrowRightAltIcon />}
+                                variant="outlined"
+                                sx={{ tabIndex: "-1" }}
+                            >
+                                See Projects
+                            </Button>
+                        </Link>
                     </Box>
                 </Grid>
                 <Grid

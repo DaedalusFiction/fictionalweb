@@ -6,7 +6,10 @@ import ProjectsComponent from "../components/ProjectsComponent";
 import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
 
-const quote = { author: "me", body: "fuck I hate writing" };
+const quote = {
+    author: "William Faulkner",
+    body: "If a story is in you, it has to come out.",
+};
 
 const Projects = () => {
     return (

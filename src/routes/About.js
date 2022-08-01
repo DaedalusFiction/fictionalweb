@@ -1,15 +1,13 @@
 import ArrowRightAlt from "@mui/icons-material/ArrowRightAlt";
-import { Button, Container, Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { Link } from "react-router-dom";
-import BlockQuote from "../components/BlockQuote";
 import Header from "../components/Header";
 import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
 import { navigateToTop } from "../utils/utils";
 import truck from "../images/truck.jpg";
 
-const quote = { author: "me", body: "writing sucks" };
 const About = () => {
     return (
         <>

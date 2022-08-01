@@ -3,6 +3,8 @@ import { Container } from "@mui/system";
 import React from "react";
 import { primary } from "../themes/primary";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { navigateToTop } from "../utils/utils";
+import { Link } from "react-router-dom";
 
 const Showcase = () => {
     return (
@@ -28,7 +30,7 @@ const Showcase = () => {
                 >
                     <Box
                         sx={{
-                            position: "sticky",
+                            position: { xs: "static", md: "sticky" },
                             top: "7rem",
                             marginBottom: "5rem",
                         }}
@@ -54,13 +56,21 @@ const Showcase = () => {
                         </Typography>
                     </Box>
 
-                    <Button
-                        size="large"
-                        endIcon={<ArrowRightAltIcon />}
-                        variant="outlined"
+                    <Link
+                        to="/contact"
+                        onClick={() => {
+                            navigateToTop();
+                        }}
                     >
-                        Contact
-                    </Button>
+                        <Button
+                            size="large"
+                            endIcon={<ArrowRightAltIcon />}
+                            variant="outlined"
+                            sx={{ tabIndex: "-1" }}
+                        >
+                            Contact
+                        </Button>
+                    </Link>
                 </Grid>
                 <Grid
                     className="gradient"

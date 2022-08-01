@@ -103,7 +103,7 @@ const Footer = () => {
                                         return (
                                             <Link
                                                 to={link.href}
-                                                key={link.href}
+                                                key={link.text}
                                                 onClick={() => {
                                                     navigateToTop();
                                                 }}
@@ -123,6 +123,7 @@ const Footer = () => {
                                     section.items.map((link) => {
                                         return (
                                             <a
+                                                key={link.text}
                                                 className="link-footer"
                                                 href={link.href}
                                                 target="_BLANK"

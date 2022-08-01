@@ -4,6 +4,8 @@ import React from "react";
 import { primary } from "../themes/primary";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import BlockQuote from "./BlockQuote";
+import { Link } from "react-router-dom";
+import { navigateToTop } from "../utils/utils";
 
 const quote = {
     body: "If only there could be an invention that bottled up a memory, like scent. And it never faded, and it never got stale, and then, when one wanted it, the bottle could be uncorked, and it would be like living the moment all over again.",
@@ -80,13 +82,21 @@ const Showcase = () => {
                             Except it can be a whole lot more affordable than
                             you might think. Just don't tell anyone that.
                         </Typography>
-                        <Button
-                            size="large"
-                            endIcon={<ArrowRightAltIcon />}
-                            variant="outlined"
+                        <Link
+                            to="/about"
+                            onClick={() => {
+                                navigateToTop();
+                            }}
                         >
-                            Services
-                        </Button>
+                            <Button
+                                size="large"
+                                endIcon={<ArrowRightAltIcon />}
+                                variant="outlined"
+                                sx={{ tabIndex: "-1" }}
+                            >
+                                About
+                            </Button>
+                        </Link>
                     </Box>
                 </Grid>
                 <Grid

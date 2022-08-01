@@ -85,7 +85,7 @@ const Portfolio = () => {
                                 size="large"
                                 endIcon={<ArrowRightAltIcon />}
                                 variant="outlined"
-                                sx={{ tabIndex: "-1" }}
+                                tabIndex={-1}
                             >
                                 See Projects
                             </Button>

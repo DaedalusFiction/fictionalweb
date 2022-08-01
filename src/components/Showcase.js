@@ -92,7 +92,7 @@ const Showcase = () => {
                                 size="large"
                                 endIcon={<ArrowRightAltIcon />}
                                 variant="outlined"
-                                sx={{ tabIndex: "-1" }}
+                                tabIndex={-1}
                             >
                                 About
                             </Button>

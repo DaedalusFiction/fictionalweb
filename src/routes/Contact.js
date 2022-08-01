@@ -16,6 +16,7 @@ import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
 import emailjs from "@emailjs/browser";
 import SendIcon from "@mui/icons-material/Send";
+import bike from "../images/bike.avif";
 
 const Contact = () => {
     const [email, setEmail] = useState("");
@@ -133,6 +134,11 @@ const Contact = () => {
                                     </Typography>
                                 )}
                             </Box>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} sx={{ borderTop: primary.border }}>
+                        <Box>
+                            <img src={bike} alt="bike on the street" />
                         </Box>
                     </Grid>
                 </Grid>

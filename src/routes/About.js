@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
 import { navigateToTop } from "../utils/utils";
-import truck from "../images/truck.jpg";
+import truck from "../images/truck.avif";
 
 const About = () => {
     return (
@@ -133,7 +133,7 @@ const About = () => {
                                 <Button
                                     variant="outlined"
                                     size="large"
-                                    sx={{ tabIndex: "-1" }}
+                                    tabIndex={-1}
                                     endIcon={<ArrowRightAlt />}
                                 >
                                     Contact

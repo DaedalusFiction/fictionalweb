@@ -157,7 +157,7 @@ const Header = () => {
                                         );
                                     }}
                                 >
-                                    <Button sx={{ tabIndex: "-1" }}>
+                                    <Button tabIndex={-1}>
                                         {route.location}
                                     </Button>
                                 </Link>

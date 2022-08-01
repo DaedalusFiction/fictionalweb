@@ -61,6 +61,7 @@ const Projects = () => {
                         return (
                             <Box
                                 key={index}
+                                tabIndex={1}
                                 onClick={() => {
                                     handleClick(project);
                                 }}

@@ -30,7 +30,7 @@ const About = () => {
                     >
                         <Typography
                             className="sticky"
-                            variant="h1"
+                            variant="h2"
                             align="right"
                             sx={{
                                 margin: primary.custom.spacing.paragraph,
@@ -62,7 +62,9 @@ const About = () => {
                                 your heritage and your taste. If you're a
                                 photographer, your portfolio tells the story of
                                 how you see the world and how that vision has
-                                changed and changes over time.
+                                changed and changes over time. If you're a
+                                novelist... Well, I think you should be able to
+                                figure that one out.
                             </Typography>
                         </Box>
                     </Grid>

@@ -152,7 +152,9 @@ const Header = () => {
                                     key={route.location}
                                     to={route.to}
                                     onClick={() => {
-                                        navigateToTop();
+                                        navigateToTop(
+                                            route.location === "Home"
+                                        );
                                     }}
                                 >
                                     <Button sx={{ tabIndex: "-1" }}>

@@ -30,13 +30,13 @@ const About = () => {
                     >
                         <Typography
                             className="sticky"
-                            variant="h2"
+                            variant="h1"
                             align="right"
                             sx={{
                                 margin: primary.custom.spacing.paragraph,
                             }}
                         >
-                            CONFESSION:
+                            Write what you know.
                         </Typography>
                     </Grid>
                     <Grid
@@ -63,8 +63,7 @@ const About = () => {
                                 photographer, your portfolio tells the story of
                                 how you see the world and how that vision has
                                 changed and changes over time. If you're a
-                                novelist... Well, I think you should be able to
-                                figure that one out.
+                                novelist... Well, you just tell stories.
                             </Typography>
                         </Box>
                     </Grid>

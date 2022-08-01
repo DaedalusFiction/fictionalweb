@@ -1,4 +1,4 @@
-const navigateToTop = (isHome) => {
+const navigateToTop = (isMobile, isHome) => {
     if (isHome) {
         window.scrollTo(0, 16 * 77);
     } else {

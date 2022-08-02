@@ -63,7 +63,7 @@ const Showcase = () => {
                 >
                     <Typography variant="body1" sx={{ maxWidth: "40ch" }}>
                         It's good advice, but it's a little limiting. A better
-                        way to say it might be "Know what you write." You don't
+                        way to say it might be: "Know what you write." You don't
                         have to have ten years with the Ringling Bros. to write
                         a novel about lion tamers, but if you want to really
                         engage your readers, you would do well to do your

@@ -1,18 +1,19 @@
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { navigateToTop } from "../utils/utils";
 
 const routes = [
-    { location: "Home", to: "/" },
-    { location: "About", to: "/about" },
-    { location: "Projects", to: "/projects" },
-    { location: "Contact", to: "/contact" },
+    { location: "Home", to: "/", value: 0 },
+    { location: "About", to: "/about", value: 1 },
+    { location: "Projects", to: "/projects", value: 2 },
+    { location: "Contact", to: "/contact", value: 3 },
 ];
 
 export default function NavBar() {
+    const location = useLocation();
     const navigate = useNavigate();
     const [value, setValue] = useState(0);
 
@@ -20,6 +21,14 @@ export default function NavBar() {
         setValue(newValue);
         navigate(e.target.id);
     };
+
+    useEffect(() => {
+        //makes sure value gets updated if user navigates to page using button in content sections or elsewhere
+        const newValue = routes.filter(
+            (route) => route.to === location.pathname
+        )[0].value;
+        setValue(newValue);
+    }, [location.pathname]);
 
     return (
         <Box sx={{ width: "100%" }}>

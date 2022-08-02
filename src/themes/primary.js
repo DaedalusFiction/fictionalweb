@@ -191,6 +191,15 @@ primary = createTheme(primary, {
                 },
             },
         },
+        MuiTab: {
+            styleOverrides: {
+                // Name of the slot
+                root: {
+                    fontFamily: primary.typography.primary.accent,
+                    fontSize: "1rem",
+                },
+            },
+        },
     },
 });
 

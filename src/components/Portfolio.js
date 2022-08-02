@@ -26,7 +26,7 @@ const Portfolio = () => {
                 >
                     <Container maxWidth="xl">
                         <Typography variant="h1" align="center">
-                            Write for your audience.
+                            Show, don't tell.
                         </Typography>
                     </Container>
                 </Grid>
@@ -50,22 +50,15 @@ const Portfolio = () => {
                             marginBottom: "3rem",
                         }}
                     >
-                        <Typography variant="body1">
-                            People want to look at websites that are sharp and
-                            fancy. If your website isn't sharp and fancy, then
-                            they simply won't care.
+                        <Typography>
+                            I could tell you all about the websites I build, how
+                            they're all custom designed by me, how they're all
+                            built in the latest JavaScript and CSS frameworks,
+                            and that they consistently score 97+ on Google
+                            Lighthouse analytics.
                         </Typography>
                         <br />
-                        <Typography>
-                            That's why I make websites that are sharp and fancy.
-                            Just look at the one in this screenshot, or this
-                            one, the one you're looking at right now. Sharp and
-                            fancy, right?
-                        </Typography>
-                        <br />
-                        <Typography>
-                            I think so. And I hope you do too.
-                        </Typography>
+                        <Typography>Or I could just show you.</Typography>
                         <br />
                     </Box>
                     <Box

@@ -45,7 +45,7 @@ const Showcase = () => {
                                 textAlign: { xs: "center", md: "end" },
                             }}
                         >
-                            Show, don't tell.
+                            Write what you know.
                         </Typography>
                     </Box>
                 </Grid>
@@ -63,11 +63,12 @@ const Showcase = () => {
                     }}
                 >
                     <Typography variant="body1" sx={{ maxWidth: "40ch" }}>
-                        Convincing customers and clients to like you isn't
-                        always easy. You can't just come out and tell them that
-                        you're trustworthy--you have to <em>show</em> them. How
-                        do you do that? You let them know you mean business by
-                        shelling out for a fancy website, that's how.
+                        It's good advice, but it's a little limiting. A better
+                        way to say it might be "Know what you write." You don't
+                        have to have ten years with the Ringling Bros. to write
+                        a novel about lion tamers, but if you want to really
+                        engage your readers, you would do well to do your
+                        research first.
                     </Typography>
                     <Box
                         sx={{
@@ -79,8 +80,10 @@ const Showcase = () => {
                         }}
                     >
                         <Typography sx={{ maxWidth: "40ch" }}>
-                            Except it can be a whole lot more affordable than
-                            you might think. Just don't tell anyone that.
+                            When you hire me to build a website, I'll make sure
+                            I know what it is you want. Before I write a single
+                            line of code I'll know exactly what your goals are
+                            and what your vision for your website looks like.
                         </Typography>
                         <Link
                             to="/about"

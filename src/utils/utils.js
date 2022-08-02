@@ -6,7 +6,7 @@ const navigateToTop = (isHome) => {
     } else if (isHome) {
         window.scrollTo(0, 16 * 77);
     } else {
-        window.scrollTo(0, 16 * 28);
+        window.scrollTo(0, 16 * 29);
     }
 };
 

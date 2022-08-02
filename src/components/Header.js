@@ -9,11 +9,12 @@ import {
 } from "@mui/material";
 import { Container } from "@mui/system";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { primary } from "../themes/primary";
 import MenuIcon from "@mui/icons-material/Menu";
 import { navigateToTop } from "../utils/utils";
 import BlockQuote from "./BlockQuote";
+import NavBar from "./NavBar";
 
 const routes = [
     { location: "Home", to: "/" },
@@ -60,6 +61,7 @@ const Header = () => {
                         display: "flex",
                         alignItems: "end",
                         paddingLeft: ".5em",
+                        paddingBottom: { xs: "0", md: "0.75rem" },
                     }}
                 >
                     <Box sx={{ display: "flex", gap: ".5rem" }}>
@@ -143,26 +145,10 @@ const Header = () => {
                     <Box
                         sx={{
                             display: { xs: "none", md: "flex" },
-                            justifyContent: "space-around",
+                            marginBottom: ".5rem",
                         }}
                     >
-                        {routes.map((route) => {
-                            return (
-                                <Link
-                                    key={route.location}
-                                    to={route.to}
-                                    onClick={() => {
-                                        navigateToTop(
-                                            route.location === "Home"
-                                        );
-                                    }}
-                                >
-                                    <Button tabIndex={-1}>
-                                        {route.location}
-                                    </Button>
-                                </Link>
-                            );
-                        })}
+                        <NavBar />
                     </Box>
                     <Box
                         className="flex-center"

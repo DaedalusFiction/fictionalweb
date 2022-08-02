@@ -11,7 +11,6 @@ import truck from "../images/truck.avif";
 const About = () => {
     return (
         <>
-            <Header />
             <TextBreak />
             <Box
                 sx={{ borderTop: primary.border, borderBottom: primary.border }}
@@ -27,14 +26,13 @@ const About = () => {
                         }}
                     >
                         <Typography
-                            className="sticky"
                             variant="h1"
                             align="right"
                             sx={{
                                 margin: primary.custom.spacing.paragraph,
                             }}
                         >
-                            Write what you know.
+                            Write for your audience.
                         </Typography>
                     </Grid>
                     <Grid
@@ -47,6 +45,7 @@ const About = () => {
                             sx={{
                                 margin: primary.custom.spacing.paragraph,
                                 paddingBottom: "8em",
+                                maxWidth: "45ch",
                             }}
                         >
                             <Typography>
@@ -90,8 +89,11 @@ const About = () => {
                             }}
                         >
                             <Box
-                                className="sticky"
-                                sx={{ marginBottom: "5rem" }}
+                                sx={{
+                                    marginBottom: "5rem",
+                                    position: { xs: "static", md: "sticky" },
+                                    top: "7rem",
+                                }}
                             >
                                 <Typography
                                     sx={{

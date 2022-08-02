@@ -8,8 +8,6 @@ import TextBreak from "../components/TextBreak";
 const Home = () => {
     return (
         <>
-            <Hero />
-            <Header />
             <TextBreak />
             <Showcase />
             <TextBreak />

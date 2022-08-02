@@ -45,7 +45,6 @@ const Contact = () => {
     };
     return (
         <Box>
-            <Header />
             <TextBreak />
             <Box
                 sx={{ borderTop: primary.border, borderBottom: primary.border }}

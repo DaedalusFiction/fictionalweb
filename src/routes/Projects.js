@@ -14,13 +14,13 @@ const quote = {
 const Projects = () => {
     return (
         <Box sx={{ backgroundColor: primary.palette.custom.light }}>
-            <Header />
             <TextBreak />
             <Box
                 sx={{ borderBottom: primary.border, borderTop: primary.border }}
             >
                 <Grid container>
                     <Grid
+                        order={{ xs: 2, md: 1 }}
                         item
                         xs={12}
                         md={6}
@@ -34,8 +34,13 @@ const Projects = () => {
                         }}
                     >
                         <Box>
-                            <Box sx={{ maxWidth: "45ch" }}>
-                                <Typography align="right">
+                            <Box
+                                sx={{
+                                    maxWidth: "45ch",
+                                    textAlign: { xs: "left", md: "right" },
+                                }}
+                            >
+                                <Typography>
                                     Walt Whitman never stopped writing{" "}
                                     <em>Leaves of Grass</em>. He published it
                                     first in 1855 and then rewrote it
@@ -43,19 +48,20 @@ const Projects = () => {
                                     decades.
                                 </Typography>
                                 <br />
-                                <Typography align="right">
+                                <Typography>
                                     Your website should continue to grow as you
                                     do. That's why when you hire Fictional Web,
                                     you aren't just getting a website.
                                 </Typography>
                                 <br />
-                                <Typography align="right">
+                                <Typography>
                                     You're getting a partnership.
                                 </Typography>
                             </Box>
                         </Box>
                     </Grid>
                     <Grid
+                        order={{ xs: 1, md: 2 }}
                         className="gradient"
                         item
                         xs={12}

@@ -80,9 +80,10 @@ const Showcase = () => {
                     >
                         <Typography sx={{ maxWidth: "40ch" }}>
                             When you hire me to build a website, I'll make sure
-                            I know what it is you want. Before I write a single
-                            line of code I'll know exactly what your goals are
-                            and what your vision for your website looks like.
+                            I know exactly what your goals are before I write a
+                            single line of code. I'll work with you throughout
+                            the process to make sure that the website we build
+                            tells your story in the way you want it told.
                         </Typography>
                         <Link
                             to="/about"

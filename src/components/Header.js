@@ -24,7 +24,7 @@ const routes = [
 ];
 
 const quote = {
-    body: "Good fiction's job is to comfort the disturbed and disturb the comforted.",
+    body: "Good fiction's job is to comfort the disturbed and disturb the comfortable.",
     author: "David Foster Wallace",
 };
 

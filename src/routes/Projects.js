@@ -50,8 +50,8 @@ const Projects = () => {
                                 <br />
                                 <Typography>
                                     Your website should continue to grow as you
-                                    do. That's why when you hire Fictional Web,
-                                    you aren't just getting a website.
+                                    do. That's why when you go with Fictional
+                                    Web, you aren't just getting a website.
                                 </Typography>
                                 <br />
                                 <Typography>

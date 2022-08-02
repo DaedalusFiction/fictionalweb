@@ -1,17 +1,12 @@
 import {
     Button,
-    Container,
     FormControl,
-    FormHelperText,
     Grid,
-    Input,
-    InputLabel,
     TextField,
     Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
-import Header from "../components/Header";
 import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
 import emailjs from "@emailjs/browser";
@@ -135,10 +130,28 @@ const Contact = () => {
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} sx={{ borderTop: primary.border }}>
+                    <Grid
+                        item
+                        xs={12}
+                        sx={{
+                            borderTop: primary.border,
+                            display: {
+                                xs: "none",
+                                md: "flex",
+                                flexDirection: "column",
+                            },
+                        }}
+                    >
                         <Box>
                             <img src={bike} alt="bike on the street" />
                         </Box>
+                        <Typography
+                            variant="subtitle2"
+                            align="right"
+                            sx={{ marginRight: "1em" }}
+                        >
+                            Photo by Norbert Levajsics on Unsplash
+                        </Typography>
                     </Grid>
                 </Grid>
             </Box>

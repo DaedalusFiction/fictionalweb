@@ -3,21 +3,6 @@
     scroll-behavior: smooth;
 }
 
-:root {
-    --color: #949494;
-    --fc-muted: #575757;
-    --decorative-accent: #e5e0bb;
-}
-
-@font-face {
-    font-family: "Baskerville";
-    font-style: normal;
-    font-display: swap;
-    font-weight: 600;
-    src: local("Baskerville"), local("Baskerville-regular"),
-        url("./fonts/baskerville.ttf") format("truetype");
-}
-
 a {
     text-decoration: none;
 }

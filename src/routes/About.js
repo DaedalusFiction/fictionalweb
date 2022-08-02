@@ -2,7 +2,6 @@ import ArrowRightAlt from "@mui/icons-material/ArrowRightAlt";
 import { Button, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
 import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
 import { navigateToTop } from "../utils/utils";
@@ -152,6 +151,13 @@ const About = () => {
                         <Box>
                             <img src={truck} alt="" />
                         </Box>
+                        <Typography
+                            variant="subtitle2"
+                            align="right"
+                            sx={{ marginRight: "1em" }}
+                        >
+                            Photo by Morash on Unsplash
+                        </Typography>
                     </Grid>
                 </Grid>
             </Box>

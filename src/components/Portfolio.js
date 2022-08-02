@@ -55,7 +55,7 @@ const Portfolio = () => {
                             they're all custom designed by me, how they're all
                             built in the latest JavaScript and CSS frameworks,
                             and that they consistently score 97+ on Google
-                            Lighthouse analytics.
+                            Lighthouse's desktop analytics.
                         </Typography>
                         <br />
                         <Typography>Or I could just show you.</Typography>

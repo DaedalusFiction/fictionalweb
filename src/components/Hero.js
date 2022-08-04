@@ -49,13 +49,13 @@ const Hero = () => {
                 revelry is forward! mark the unfaltering silence aft! Methinks
                 it pictures life. Foremost through the sparkling sea shoots on
                 the gay, embattled, bandering bow, but only to drag dark Ahab
-                after it, where he broods within his sternward cabing, builded
+                after it, where he broods within his sternward cabin, builded
                 over the dead waters of the wake, and further on, hunted by its
                 wolfish gurglings. The long howl thrills me through! Peace! ye
                 revellers, and set the watch! Oh, life! 'tis in an hour like
                 this, with soul beat down and held to knowledge,--as wild,
                 untutored things are forced to feed--Oh, life! 'tis now that I
-                do feel the latent horrir in thee! but 'tis not me! that
+                do feel the latent horror in thee! but 'tis not me! that
                 horror's out of me! and with the soft feeling of the human in
                 me, yet will I try to fight ye, ye grim, phantom futures! Stand
                 by me, hold me, bind me, O ye blessed influences!

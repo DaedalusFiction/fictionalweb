@@ -1,15 +1,13 @@
 import {
     Box,
-    Button,
     Grid,
     IconButton,
     Menu,
     MenuItem,
     Typography,
 } from "@mui/material";
-import { Container } from "@mui/system";
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { primary } from "../themes/primary";
 import MenuIcon from "@mui/icons-material/Menu";
 import { navigateToTop } from "../utils/utils";
@@ -67,6 +65,7 @@ const Header = () => {
                     <Box sx={{ display: "flex", gap: ".5rem" }}>
                         <Typography
                             variant="h3"
+                            component="p"
                             sx={{
                                 marginTop: { xs: "0", md: "10em" },
                             }}
@@ -75,6 +74,7 @@ const Header = () => {
                         </Typography>
                         <Typography
                             variant="h3"
+                            component="p"
                             sx={{
                                 marginTop: { xs: "0", md: "10em" },
                             }}
@@ -83,6 +83,7 @@ const Header = () => {
                         </Typography>
                         <Typography
                             variant="h3"
+                            component="p"
                             sx={{
                                 marginTop: { xs: "0", md: "10em" },
                                 color: "red",
@@ -106,6 +107,7 @@ const Header = () => {
                 >
                     <Typography
                         variant="h3"
+                        component="p"
                         sx={{
                             textAlign: "end",
                         }}
@@ -114,6 +116,7 @@ const Header = () => {
                     </Typography>
                     <Typography
                         variant="h3"
+                        component="p"
                         sx={{
                             textAlign: "end",
                             position: "sticky",

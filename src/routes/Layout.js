@@ -7,8 +7,6 @@ import Hero from "../components/Hero";
 const Layout = () => {
     const location = useLocation();
     useEffect(() => {
-        console.log(location.pathname);
-
         return () => {};
     }, [location]);
 

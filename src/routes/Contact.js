@@ -60,6 +60,7 @@ const Contact = () => {
                     <Grid item xs={12} md={5}>
                         <Typography
                             variant="h3"
+                            component="h2"
                             sx={{
                                 padding: primary.custom.spacing.paragraph,
                                 textAlign: { xs: "left", md: "right" },

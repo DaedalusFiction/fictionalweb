@@ -1,7 +1,6 @@
-import { Button, Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import React from "react";
-import { primary } from "../themes/primary";
 
 const Hero = () => {
     return (
@@ -13,9 +12,12 @@ const Hero = () => {
         >
             <Box className="hero" id="spacer"></Box>
             <Box className="hero" id="inset" sx={{ padding: "0 1rem 0 1rem" }}>
-                <Typography variant="h1">FICTIONAL</Typography>
+                <Typography variant="h1" component="p">
+                    FICTIONAL
+                </Typography>
                 <Typography
                     variant="h1"
+                    component="p"
                     sx={{
                         lineHeight: ".85em",
                         color: "red",

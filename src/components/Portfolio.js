@@ -25,7 +25,7 @@ const Portfolio = () => {
                     }}
                 >
                     <Container maxWidth="xl">
-                        <Typography variant="h1" align="center">
+                        <Typography variant="h1" component="h2" align="center">
                             Show, don't tell.
                         </Typography>
                     </Container>

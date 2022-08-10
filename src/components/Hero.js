@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <Box
             sx={{
-                height: "100vh",
+                height: "90vh",
                 overflow: "hidden",
             }}
         >
@@ -27,7 +27,7 @@ const Hero = () => {
                     WEB.
                 </Typography>
             </Box>
-            <Typography variant="body2" sx={{ textAlign: "justify" }}>
+            {/* <Typography variant="body2" sx={{ textAlign: "justify" }}>
                 My soul is more than matched; she's overmanned; and by a madman!
                 Insufferable sting, that sanity should not ground arms on such a
                 field! But he drilled deep down, and blasted all my reason out
@@ -61,7 +61,7 @@ const Hero = () => {
                 horror's out of me! and with the soft feeling of the human in
                 me, yet will I try to fight ye, ye grim, phantom futures! Stand
                 by me, hold me, bind me, O ye blessed influences!
-            </Typography>
+            </Typography> */}
         </Box>
     );
 };

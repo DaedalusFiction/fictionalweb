@@ -4,7 +4,7 @@ const navigateToTop = (isHome) => {
     if (window.innerWidth < 900) {
         window.scrollTo(0, 0);
     } else if (isHome) {
-        window.scrollTo(0, 16 * 77);
+        window.scrollTo(0, 16 * 81);
     } else {
         window.scrollTo(0, 16 * 29);
     }

@@ -1,6 +1,6 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import sicktoothScreencap from "../images/sicktoothScreencap.avif";
+import sicktoothScreencap from "../images/sicktoothScreencap.webp";
 import { primary } from "../themes/primary";
 import BlockQuote from "./BlockQuote";
 import { navigateToTop } from "../utils/utils";

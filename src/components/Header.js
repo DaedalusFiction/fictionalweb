@@ -62,36 +62,43 @@ const Header = () => {
                         paddingBottom: { xs: "0", md: "0.75rem" },
                     }}
                 >
-                    <Box sx={{ display: "flex", gap: ".5rem" }}>
-                        <Typography
-                            variant="h3"
-                            component="p"
-                            sx={{
-                                marginTop: { xs: "0", md: "10em" },
-                            }}
-                        >
-                            F
-                        </Typography>
-                        <Typography
-                            variant="h3"
-                            component="p"
-                            sx={{
-                                marginTop: { xs: "0", md: "10em" },
-                            }}
-                        >
-                            /
-                        </Typography>
-                        <Typography
-                            variant="h3"
-                            component="p"
-                            sx={{
-                                marginTop: { xs: "0", md: "10em" },
-                                color: "red",
-                            }}
-                        >
-                            W
-                        </Typography>
-                    </Box>
+                    <Link
+                        to="/"
+                        onClick={() => {
+                            navigateToTop(true);
+                        }}
+                    >
+                        <Box sx={{ display: "flex", gap: ".5rem" }}>
+                            <Typography
+                                variant="h3"
+                                component="p"
+                                sx={{
+                                    marginTop: { xs: "0", md: "10em" },
+                                }}
+                            >
+                                F
+                            </Typography>
+                            <Typography
+                                variant="h3"
+                                component="p"
+                                sx={{
+                                    marginTop: { xs: "0", md: "10em" },
+                                }}
+                            >
+                                /
+                            </Typography>
+                            <Typography
+                                variant="h3"
+                                component="p"
+                                sx={{
+                                    marginTop: { xs: "0", md: "10em" },
+                                    color: "red",
+                                }}
+                            >
+                                W
+                            </Typography>
+                        </Box>
+                    </Link>
                 </Grid>
                 <Grid
                     className="gradient"

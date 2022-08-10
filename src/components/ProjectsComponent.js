@@ -1,10 +1,10 @@
 import { Chip, Grid, Slide, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
-import forumScreencap from "../images/forumScreencap.avif";
-import pfddScreencap from "../images/pfddScreencap.avif";
-import sicktoothScreencap from "../images/sicktoothScreencap.avif";
-import streamerizeScreencap from "../images/streamerizeScreencap.avif";
+import forumScreencap from "../images/forumScreencap.webp";
+import pfddScreencap from "../images/pfddScreencap.webp";
+import sicktoothScreencap from "../images/sicktoothScreencap.webp";
+import streamerizeScreencap from "../images/streamerizeScreencap.webp";
 import { primary } from "../themes/primary";
 
 const projects = [

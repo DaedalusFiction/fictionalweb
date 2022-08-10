@@ -11,7 +11,7 @@ import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
 import emailjs from "@emailjs/browser";
 import SendIcon from "@mui/icons-material/Send";
-import bike from "../images/bike.avif";
+import bike from "../images/bike.webp";
 
 const Contact = () => {
     const [email, setEmail] = useState("");

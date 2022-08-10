@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import TextBreak from "../components/TextBreak";
 import { primary } from "../themes/primary";
 import { navigateToTop } from "../utils/utils";
-import truck from "../images/truck.avif";
+import truck from "../images/truck.webp";
 
 const About = () => {
     return (

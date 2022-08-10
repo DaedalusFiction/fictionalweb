@@ -7,7 +7,13 @@ const BlockQuote = ({ quote }) => {
         <Box sx={{ maxWidth: "45ch", padding: primary.custom.spacing.quote }}>
             <Typography
                 gutterBottom
-                sx={{ textAlign: { xs: "center", md: "start" } }}
+                sx={{
+                    textAlign: {
+                        xs: "center",
+                        md: "start",
+                        fontStyle: "italic",
+                    },
+                }}
             >
                 {quote.body}
             </Typography>

@@ -21,6 +21,7 @@ let primary = createTheme({
         custom: {
             light: "#fffcea",
             decorative: "#b6b19b",
+            accent: "#ee0e0e",
             lightMuted: "#e5e0bb",
             dark: "#4a4941",
             darkMuted: "#5e5c52",
@@ -57,7 +58,7 @@ let primary = createTheme({
 });
 
 primary = createTheme(primary, {
-    border: "1px solid red",
+    border: "1px solid " + primary.palette.custom.accent,
     custom: {
         spacing: {
             paragraph: "2rem",

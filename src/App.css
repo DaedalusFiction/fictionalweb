@@ -47,6 +47,10 @@ img {
     text-align: center;
 }
 
+.text-accent {
+    color: #ee0e0e;
+}
+
 .logo {
     width: 4rem;
     height: auto;

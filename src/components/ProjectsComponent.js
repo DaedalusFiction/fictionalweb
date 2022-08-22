@@ -57,81 +57,92 @@ const Projects = () => {
         <Box>
             <Grid container>
                 <Grid item xs={12} md={4}>
-                    {projects.map((project, index) => {
-                        return (
-                            <Box
-                                key={index}
-                                tabIndex={1}
-                                onClick={() => {
-                                    handleClick(project);
-                                }}
-                                sx={{
-                                    // marginBottom: ".5em",
-                                    padding: ".5em .75em",
-                                    border:
-                                        project.name === currentProject.name
-                                            ? primary.border
-                                            : "1px solid " +
-                                              primary.palette.background
-                                                  .default,
-                                    "&:hover": {
-                                        border: primary.border,
-                                    },
-                                    cursor: "pointer",
-                                }}
-                            >
-                                <Typography variant="h6">
-                                    {project.name}
-                                </Typography>
-                                <Typography variant="subtitle2">
-                                    {project.description}
-                                </Typography>
-                                {project.technologies.map((technology) => {
-                                    return (
-                                        <Chip
-                                            key={technology}
-                                            color="secondary"
-                                            label={technology}
+                    <Box
+                        sx={{
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "space-between",
+                            height: "100%",
+                        }}
+                    >
+                        {projects.map((project, index) => {
+                            return (
+                                <Box
+                                    key={index}
+                                    tabIndex={1}
+                                    onClick={() => {
+                                        handleClick(project);
+                                    }}
+                                    sx={{
+                                        // marginBottom: ".5em",
+                                        padding: ".5em .75em",
+                                        background:
+                                            project.name === currentProject.name
+                                                ? primary.palette.custom
+                                                      .lightMuted
+                                                : primary.palette.custom.light,
+                                        "&:hover": {
+                                            background:
+                                                primary.palette.custom
+                                                    .lightMuted,
+                                        },
+                                        cursor: "pointer",
+                                    }}
+                                >
+                                    <Typography variant="h6">
+                                        {project.name}
+                                    </Typography>
+                                    <Typography variant="subtitle2">
+                                        {project.description}
+                                    </Typography>
+                                    {project.technologies.map((technology) => {
+                                        return (
+                                            <Chip
+                                                key={technology}
+                                                color="secondary"
+                                                label={technology}
+                                                sx={{
+                                                    margin: ".5em .5em .5em 0",
+                                                    cursor: "pointer",
+                                                }}
+                                            />
+                                        );
+                                    })}
+                                    {currentProject.name === project.name && (
+                                        <Box
                                             sx={{
-                                                margin: ".5em .5em .5em 0",
-                                                cursor: "pointer",
+                                                overflow: "hidden",
+                                                borderRadius:
+                                                    primary.borderRadius,
+                                                display: {
+                                                    xs: "flex",
+                                                    md: "none",
+                                                },
                                             }}
-                                        />
-                                    );
-                                })}
-                                {currentProject.name === project.name && (
-                                    <Box
-                                        sx={{
-                                            overflow: "hidden",
-                                            borderRadius: primary.borderRadius,
-                                            display: {
-                                                xs: "flex",
-                                                md: "none",
-                                            },
-                                        }}
-                                    >
-                                        <Slide
-                                            direction="down"
-                                            timeout={{ enter: 550 }}
-                                            in={
-                                                photoActive &&
-                                                project.name ===
-                                                    currentProject.name
-                                            }
                                         >
-                                            <a href={project.url}>
-                                                <img
-                                                    className="screencap"
-                                                    src={project.image}
-                                                    alt="project screenshot"
-                                                />
-                                            </a>
-                                        </Slide>
-                                    </Box>
-                                )}
-                            </Box>
-                        );
-                    })}
+                                            <Slide
+                                                direction="down"
+                                                timeout={{ enter: 550 }}
+                                                in={
+                                                    photoActive &&
+                                                    project.name ===
+                                                        currentProject.name
+                                                }
+                                            >
+                                                <a href={project.url}>
+                                                    <img
+                                                        className="screencap"
+                                                        src={project.image}
+                                                        alt="project screenshot"
+                                                    />
+                                                </a>
+                                            </Slide>
+                                        </Box>
+                                    )}
+                                </Box>
+                            );
+                        })}
+                    </Box>
                 </Grid>
                 <Grid
                     item

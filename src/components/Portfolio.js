@@ -26,7 +26,8 @@ const Portfolio = () => {
                 >
                     <Container maxWidth="xl">
                         <Typography variant="h1" component="h2" align="center">
-                            Show, don't tell.
+                            Show them what{" "}
+                            <span className="text-accent">you're made</span> of.
                         </Typography>
                     </Container>
                 </Grid>
@@ -51,14 +52,14 @@ const Portfolio = () => {
                         }}
                     >
                         <Typography>
-                            I could tell you all about the websites I build, how
-                            they're all custom designed by me, how they're all
-                            built in the latest JavaScript and CSS frameworks,
-                            and how they consistently score 97+ on Google
-                            Lighthouse's desktop analytics.
+                            We could tell you all about the websites we build,
+                            how they're all custom designed from the ground up,
+                            how they're all built in the latest JavaScript and
+                            CSS frameworks, and how they consistently score 97+
+                            on Google Lighthouse's desktop analytics.
                         </Typography>
                         <br />
-                        <Typography>Or I could just show you.</Typography>
+                        <Typography>Or we could just show you.</Typography>
                         <br />
                     </Box>
                     <Box

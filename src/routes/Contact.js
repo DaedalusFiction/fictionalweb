@@ -54,7 +54,7 @@ const Contact = () => {
                         }}
                     >
                         <Typography variant="h1" align="center">
-                            Tell me your story.
+                            Tell us your story.
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={5}>
@@ -66,8 +66,8 @@ const Contact = () => {
                                 textAlign: { xs: "left", md: "right" },
                             }}
                         >
-                            Schedule a free consultation and share with me your
-                            vision.
+                            Schedule a free consultation and share with us{" "}
+                            <span className="text-accent">your vision.</span>
                         </Typography>
                     </Grid>
                     <Grid

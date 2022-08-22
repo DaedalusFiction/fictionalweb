@@ -44,7 +44,8 @@ const Showcase = () => {
                                 textAlign: { xs: "center", md: "end" },
                             }}
                         >
-                            Write what you know.
+                            Websites that{" "}
+                            <span className="text-accent">speak truth.</span>
                         </Typography>
                     </Box>
                 </Grid>
@@ -62,12 +63,10 @@ const Showcase = () => {
                     }}
                 >
                     <Typography variant="body1" sx={{ maxWidth: "40ch" }}>
-                        It's good advice, but it's a little limiting. A better
-                        way to say it might be: "Know what you write." You don't
-                        have to have ten years with the Ringling Bros. to write
-                        a novel about lion tamers, but if you want to really
-                        engage your readers, you would do well to do your
-                        research first.
+                        Our focus is on creating websites that are true to our
+                        clients and their vision. Whether you're a small
+                        business, a visual artist, or an author, we'll make sure
+                        that your website reflects who you are.
                     </Typography>
                     <Box
                         sx={{
@@ -79,11 +78,8 @@ const Showcase = () => {
                         }}
                     >
                         <Typography sx={{ maxWidth: "40ch" }}>
-                            When you hire me to build a website, I'll make sure
-                            I know exactly what your goals are before I write a
-                            single line of code. I'll work with you throughout
-                            the process to make sure that the website we build
-                            tells your story in the way you want it told.
+                            We strive for clarity and accessibility in
+                            everything we design.
                         </Typography>
                         <Link
                             to="/about"

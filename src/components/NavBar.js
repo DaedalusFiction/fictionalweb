@@ -4,6 +4,7 @@ import Tab from "@mui/material/Tab";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { navigateToTop } from "../utils/utils";
+import { primary } from "../themes/primary";
 
 const routes = [
     // { location: "Home", to: "/", value: 0 },
@@ -45,6 +46,11 @@ export default function NavBar() {
                             label={route.location}
                             onClick={() => {
                                 navigateToTop(route.location === "Home");
+                            }}
+                            sx={{
+                                "&:hover": {
+                                    color: primary.palette.custom.accent,
+                                },
                             }}
                         />
                     );

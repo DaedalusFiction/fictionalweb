@@ -40,14 +40,6 @@ const Projects = () => {
                                 }}
                             >
                                 <Typography>
-                                    Walt Whitman never stopped writing{" "}
-                                    <em>Leaves of Grass</em>. He published it
-                                    first in 1855 and then rewrote it
-                                    eight(-ish) more times over the next four
-                                    decades.
-                                </Typography>
-                                <br />
-                                <Typography>
                                     Your website should continue to grow as you
                                     do. That's why when you go with Fictional
                                     Web, you aren't just getting a website.
@@ -70,9 +62,10 @@ const Projects = () => {
                             padding: primary.custom.spacing.paragraph,
                         }}
                     >
-                        <Box className="sticky">
+                        <Box>
                             <Typography variant="h1" sx={{ maxWidth: "10rem" }}>
-                                All writing is rewriting.
+                                All writing is{" "}
+                                <span className="text-accent">rewriting.</span>
                             </Typography>
                         </Box>
                     </Grid>

@@ -48,10 +48,10 @@ const Showcase = () => {
                                 textAlign: { xs: "start", md: "end" },
                             }}
                         >
-                            My background in newspaper and fiction editing has
-                            given me an ear for language. If you know what you
+                            Our background in newspaper and fiction editing has
+                            given us an ear for language. If you know what you
                             want to tell people but aren't sure quite how to
-                            word it, I can help.
+                            word it, we can help.
                         </Typography>
                     </Box>
 
@@ -89,8 +89,9 @@ const Showcase = () => {
                         }}
                     >
                         <Typography variant="h1">
-                            You won't know what your story is about until it's
-                            finished.
+                            You won't know what{" "}
+                            <span className="text-accent">your story</span> is
+                            about until it's finished.
                         </Typography>
                     </Box>
                 </Grid>

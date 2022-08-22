@@ -92,7 +92,7 @@ const Header = () => {
                                 component="p"
                                 sx={{
                                     marginTop: { xs: "0", md: "10em" },
-                                    color: "red",
+                                    color: primary.palette.custom.accent,
                                 }}
                             >
                                 W
@@ -124,7 +124,9 @@ const Header = () => {
                     <Typography
                         variant="h3"
                         component="p"
+                        className="text-accent"
                         sx={{
+                            color: primary.palette.custom.accent,
                             textAlign: "end",
                             position: "sticky",
                             top: ".5em",

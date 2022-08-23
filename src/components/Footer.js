@@ -14,7 +14,7 @@ const Footer = ({ sections }) => {
                             item
                             key={section.name}
                             xs={12}
-                            md={4}
+                            md={3.8}
                             sx={{
                                 padding: "2em",
                                 borderTop: primary.border,
@@ -73,6 +73,32 @@ const Footer = ({ sections }) => {
                         </Grid>
                     );
                 })}
+                <Grid item xs={12} md={0.6}>
+                    <Box
+                        className="gradient"
+                        sx={{
+                            height: "100%",
+                            borderTop: primary.border,
+                            padding: ".5rem",
+                            display: "flex",
+                            justifyContent: "end",
+                        }}
+                    >
+                        <Typography
+                            variant="subtitle2"
+                            sx={{
+                                writingMode: {
+                                    xs: "inherit",
+                                    md: "vertical-rl",
+                                },
+                                textOrientation: "mixed",
+                            }}
+                        >
+                            <span style={{ fontSize: "1.2rem" }}>&copy;</span>{" "}
+                            2022 Fictional Web (obv)
+                        </Typography>
+                    </Box>
+                </Grid>
             </Grid>
         </Box>
     );

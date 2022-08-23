@@ -93,6 +93,7 @@ primary = createTheme(primary, {
             fontSize: "1.25rem",
         },
         subtitle2: {
+            fontFamily: primary.typography.primary.main,
             color: primary.palette.custom.darkMuted,
         },
         body1: {

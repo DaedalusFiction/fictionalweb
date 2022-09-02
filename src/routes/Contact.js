@@ -2,6 +2,9 @@ import {
     Button,
     FormControl,
     Grid,
+    InputLabel,
+    MenuItem,
+    Select,
     TextField,
     Typography,
 } from "@mui/material";
@@ -15,16 +18,21 @@ import bike from "../images/bike.webp";
 
 const Contact = () => {
     const [email, setEmail] = useState("");
+    const [interest, setInterest] = useState("");
     const [emailSent, setEmailSent] = useState(false);
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
+    };
+    const handleInterestChange = (e) => {
+        setInterest(e.target.value);
     };
 
     const handleSendEmail = () => {
         var templateParams = {
             website: "Fictional Web",
             email: email,
+            interest: interest,
         };
 
         emailjs
@@ -94,6 +102,60 @@ const Contact = () => {
                             </Typography>
                             <br />
                             <Typography>or</Typography>
+                            <br />
+                            {!emailSent && (
+                                <Box
+                                    sx={{
+                                        minWidth: "10rem",
+                                        maxWidth: "15rem",
+                                    }}
+                                >
+                                    <Typography>
+                                        What service are you interested in?
+                                    </Typography>
+                                    <br />
+                                    <FormControl fullWidth>
+                                        <InputLabel id="demo-simple-select-label">
+                                            Service
+                                        </InputLabel>
+                                        <Select
+                                            labelId="interest-select-label"
+                                            id="interest-select"
+                                            value={interest}
+                                            label=""
+                                            onChange={handleInterestChange}
+                                        >
+                                            <MenuItem value={"template"}>
+                                                Template
+                                            </MenuItem>
+                                            <MenuItem value={"hybrid"}>
+                                                Hybrid
+                                            </MenuItem>
+                                            <MenuItem value={"custom"}>
+                                                Custom
+                                            </MenuItem>
+                                            <MenuItem value={"template?"}>
+                                                Template I think but I'm not
+                                                really sure
+                                            </MenuItem>
+                                            <MenuItem value={"hybrid?"}>
+                                                Hybrid I guess? I have some
+                                                things I'd like to change
+                                            </MenuItem>
+                                            <MenuItem value={"custom!"}>
+                                                Custom, definitely. I'm on a
+                                                mission from God.
+                                            </MenuItem>
+                                            <MenuItem value={"unsure"}>
+                                                Not sure
+                                            </MenuItem>
+                                            <MenuItem value={"other"}>
+                                                Other
+                                            </MenuItem>
+                                        </Select>
+                                    </FormControl>
+                                </Box>
+                            )}
                             <br />
                             <Box
                                 sx={{

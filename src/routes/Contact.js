@@ -187,7 +187,7 @@ const Contact = () => {
                                     </>
                                 ) : (
                                     <Typography>
-                                        Thanks! we'll be in touch soon
+                                        Thanks! We'll be in touch soon
                                     </Typography>
                                 )}
                             </Box>

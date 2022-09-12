@@ -2,17 +2,22 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { primary } from "../themes/primary";
+import rose from "../images/rose.png";
 
 const Hero = () => {
     return (
         <Box
             sx={{
-                height: "90vh",
-                overflow: "hidden",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "end",
+                padding: "35vh 1rem",
+                background: `url(${rose})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
             }}
         >
-            <Box className="hero" id="spacer"></Box>
-            <Box className="hero" id="inset" sx={{ padding: "0 1rem 0 1rem" }}>
+            <Box>
                 <Typography variant="h1" component="p">
                     FICTIONAL
                 </Typography>
@@ -27,10 +32,10 @@ const Hero = () => {
                 >
                     WEB.
                 </Typography>
-                <Typography sx={{ textAlign: "end" }}>
-                    Creative sites for creative people.
-                </Typography>
             </Box>
+            <Typography sx={{ textAlign: "end" }}>
+                Creative sites for creative people.
+            </Typography>
         </Box>
     );
 };

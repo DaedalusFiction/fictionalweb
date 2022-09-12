@@ -9,9 +9,9 @@ const Home = () => {
         <>
             <TextBreak />
             <Showcase />
-            <ServicesPreview />
             <TextBreak />
             <Portfolio />
+            <ServicesPreview />
             <TextBreak />
             <Editing />
             <TextBreak />

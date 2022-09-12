@@ -7,10 +7,10 @@ import { navigateToTop } from "../utils/utils";
 import { primary } from "../themes/primary";
 
 const routes = [
-    // { location: "Home", to: "/", value: 0 },
-    { location: "Projects", to: "/projects", value: 0 },
-    { location: "About", to: "/about", value: 1 },
-    { location: "Contact", to: "/contact", value: 2 },
+    { location: "Templates", to: "/templates", value: 0 },
+    { location: "Projects", to: "/projects", value: 1 },
+    { location: "About", to: "/about", value: 2 },
+    { location: "Contact", to: "/contact", value: 3 },
 ];
 
 export default function NavBar() {

@@ -11,10 +11,10 @@ const Hero = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "end",
-                padding: "35vh 1rem",
+                padding: "20vh 1em 50vh 1em",
                 background: `url(${rose})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundSize: { xs: "fit", md: "cover" },
+                backgroundPosition: { xs: "57% 0%", md: "center" },
             }}
         >
             <Box>

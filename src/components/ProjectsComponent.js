@@ -74,6 +74,7 @@ const Projects = () => {
                                         handleClick(project);
                                     }}
                                     sx={{
+                                        flexGrow: "1",
                                         // marginBottom: ".5em",
                                         padding: ".5em .75em",
                                         background:

@@ -10,6 +10,7 @@ import { primary } from "../themes/primary";
 import BlockQuote from "./BlockQuote";
 import { navigateToTop } from "../utils/utils";
 import { Link } from "react-router-dom";
+import ImageGallery from "./ImageGallery";
 
 const quote = {
     body: "There have been great societies that did not use the wheel, but there have been no societies that did not tell stories.",
@@ -124,7 +125,7 @@ const Portfolio = () => {
                                 variant="outlined"
                                 tabIndex={-1}
                             >
-                                See Projects
+                                See All Projects
                             </Button>
                         </Link>
                     </Box>
@@ -151,72 +152,7 @@ const Portfolio = () => {
                     >
                         PROJECTS
                     </Typography>
-                    <Box sx={{ padding: "1em" }}>
-                        <Grid container spacing={2}>
-                            {projects.map((project, index) => {
-                                return (
-                                    <Grid item key={index} xs={6} md={4}>
-                                        <Box
-                                            sx={{
-                                                position: "relative",
-                                            }}
-                                        >
-                                            <Box
-                                                sx={{
-                                                    backgroundImage: `url(${project.image})`,
-                                                    backgroundSize: "cover",
-                                                    backgroundPosition:
-                                                        "50% 50%",
-                                                    height: "15rem",
-                                                    width: "100%",
-                                                    transition: "00ms",
-                                                    filter: "sepia(70%)",
-                                                }}
-                                            />
-                                            <a
-                                                href={project.href}
-                                                target="_BLANK"
-                                                rel="noreferrer"
-                                            >
-                                                <Box
-                                                    sx={{
-                                                        position: "absolute",
-                                                        top: "0",
-                                                        height: "100%",
-                                                        width: "100%",
-                                                        backgroundColor:
-                                                            "rgba(0, 0, 0, 0.4)",
-                                                        left: "0",
-                                                        opacity: "0",
-                                                        transition: "300ms",
-                                                        "&:hover": {
-                                                            opacity: "100%",
-                                                        },
-                                                        display: "flex",
-                                                        justifyContent:
-                                                            "center",
-                                                        alignItems: "center",
-                                                        cursor: "pointer",
-                                                    }}
-                                                >
-                                                    <Typography
-                                                        variant="h6"
-                                                        sx={{
-                                                            color: "white",
-                                                            textTransform:
-                                                                "uppercase",
-                                                        }}
-                                                    >
-                                                        {project.name}
-                                                    </Typography>
-                                                </Box>
-                                            </a>
-                                        </Box>
-                                    </Grid>
-                                );
-                            })}
-                        </Grid>
-                    </Box>
+                    <ImageGallery images={projects} />
                     <Box>
                         <BlockQuote
                             quote={quote}

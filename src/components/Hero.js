@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { primary } from "../themes/primary";
-import rose from "../images/rose.png";
+import rose from "../images/rose2.webp";
 
 const Hero = () => {
     return (
@@ -11,10 +11,10 @@ const Hero = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "end",
-                padding: "20vh 1em 50vh 1em",
+                padding: { xs: "15vh 1em 55vh 1em", md: "20vh 1em 50vh 1em" },
                 background: `url(${rose})`,
-                backgroundSize: { xs: "fit", md: "cover" },
-                backgroundPosition: { xs: "57% 0%", md: "center" },
+                backgroundSize: { xs: "cover", md: "cover" },
+                backgroundPosition: { xs: "60% 0%", md: "center" },
             }}
         >
             <Box>

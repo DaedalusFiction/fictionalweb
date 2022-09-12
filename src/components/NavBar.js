@@ -24,7 +24,7 @@ export default function NavBar() {
     };
 
     useEffect(() => {
-        if (location.pathname === "/") {
+        if (location.pathname === "/" || window.innerWidth > 500) {
             setValue(false);
             return;
         }

@@ -1,11 +1,4 @@
-import {
-    Box,
-    Button,
-    Container,
-    Divider,
-    Grid,
-    Typography,
-} from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import sicktoothScreencap from "../images/sicktoothScreencap.webp";
 import streamerizeScreencap from "../images/streamerizeScreencap.webp";
@@ -160,9 +153,9 @@ const Portfolio = () => {
                     </Typography>
                     <Box sx={{ padding: "1em" }}>
                         <Grid container spacing={2}>
-                            {projects.map((project) => {
+                            {projects.map((project, index) => {
                                 return (
-                                    <Grid item xs={6} md={4}>
+                                    <Grid item key={index} xs={6} md={4}>
                                         <Box
                                             sx={{
                                                 position: "relative",

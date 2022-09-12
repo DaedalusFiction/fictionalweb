@@ -104,12 +104,7 @@ const Contact = () => {
                             <Typography>or</Typography>
                             <br />
                             {!emailSent && (
-                                <Box
-                                    sx={{
-                                        minWidth: "10rem",
-                                        maxWidth: "15rem",
-                                    }}
-                                >
+                                <Box sx={{ maxWidth: "20rem" }}>
                                     <Typography>
                                         What service are you interested in?
                                     </Typography>
@@ -134,18 +129,6 @@ const Contact = () => {
                                             <MenuItem value={"custom"}>
                                                 Custom
                                             </MenuItem>
-                                            <MenuItem value={"template?"}>
-                                                Template I think but I'm not
-                                                really sure
-                                            </MenuItem>
-                                            <MenuItem value={"hybrid?"}>
-                                                Hybrid I guess? I have some
-                                                things I'd like to change
-                                            </MenuItem>
-                                            <MenuItem value={"custom!"}>
-                                                Custom, definitely. I'm on a
-                                                mission from God.
-                                            </MenuItem>
                                             <MenuItem value={"unsure"}>
                                                 Not sure
                                             </MenuItem>
@@ -161,6 +144,7 @@ const Contact = () => {
                                 sx={{
                                     display: "flex",
                                     alignItems: "end",
+                                    flexWrap: "wrap",
                                     gap: "1em",
                                 }}
                             >
@@ -174,6 +158,7 @@ const Contact = () => {
                                                 placeholder="dante@gmail.com"
                                                 variant="standard"
                                                 onChange={handleEmailChange}
+                                                fullWidth
                                             />
                                         </FormControl>
                                         <Button

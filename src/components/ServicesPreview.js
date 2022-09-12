@@ -106,7 +106,12 @@ const ServicesPreview = () => {
                                         navigateToTop();
                                     }}
                                 >
-                                    <Button variant={service.button.variant}>
+                                    <Button
+                                        onClick={() => {
+                                            navigateToTop();
+                                        }}
+                                        variant={service.button.variant}
+                                    >
                                         {service.button.text}
                                     </Button>
                                 </Link>

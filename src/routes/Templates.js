@@ -6,6 +6,7 @@ import { navigateToTop } from "../utils/utils";
 import forumScreencap from "../images/forumScreencap.webp";
 import artistScreencap from "../images/artistScreencap.webp";
 import artistScreencap2 from "../images/artistScreencap2.webp";
+import artistScreencap3 from "../images/artistScreencap3.webp";
 import designerScreencap from "../images/designerScreencap.webp";
 import ImageGallery from "../components/ImageGallery";
 import TextBreak from "../components/TextBreak";
@@ -20,6 +21,11 @@ const templates = [
         name: "ARTIST TWO",
         href: "https://fictionalweb-artist-two.netlify.app",
         image: artistScreencap2,
+    },
+    {
+        name: "ARTIST THREE",
+        href: "https://fictionalweb-artist-three.netlify.app",
+        image: artistScreencap3,
     },
 
     {

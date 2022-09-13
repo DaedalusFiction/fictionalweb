@@ -5,15 +5,21 @@ import { primary } from "../themes/primary";
 import { navigateToTop } from "../utils/utils";
 import forumScreencap from "../images/forumScreencap.webp";
 import artistScreencap from "../images/artistScreencap.webp";
+import artistScreencap2 from "../images/artistScreencap2.webp";
 import designerScreencap from "../images/designerScreencap.webp";
 import ImageGallery from "../components/ImageGallery";
 import TextBreak from "../components/TextBreak";
 
 const templates = [
     {
-        name: "ARTIST",
+        name: "ARTIST ONE",
         href: "https://fictionalweb-artist.netlify.app",
         image: artistScreencap,
+    },
+    {
+        name: "ARTIST TWO",
+        href: "https://fictionalweb-artist-two.netlify.app",
+        image: artistScreencap2,
     },
 
     {

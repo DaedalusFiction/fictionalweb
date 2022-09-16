@@ -79,7 +79,7 @@ const Showcase = () => {
                     >
                         <Typography sx={{ maxWidth: "40ch" }}>
                             We strive for clarity and accessibility in
-                            everything we design.
+                            everything we create.
                         </Typography>
                         <Link
                             to="/about"

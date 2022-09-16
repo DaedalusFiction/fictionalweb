@@ -65,8 +65,7 @@ const Portfolio = () => {
                 >
                     <Container maxWidth="xl">
                         <Typography variant="h1" component="h2" align="center">
-                            Show them what{" "}
-                            <span className="text-accent">you're made</span> of.
+                            Our <span className="text-accent">work.</span>
                         </Typography>
                     </Container>
                 </Grid>

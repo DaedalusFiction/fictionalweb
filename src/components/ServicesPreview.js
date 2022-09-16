@@ -7,7 +7,7 @@ import { navigateToTop } from "../utils/utils";
 const services = [
     {
         title: "Template",
-        price: "$399-499",
+        price: "$399-699",
         content:
             "Choose from one of several templates, all of which are built by us from the ground up in React and MUI. Select a color scheme and provide your own images and text.",
         button: {

@@ -1,7 +1,6 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { primary } from "../themes/primary";
 import ProjectShowcase from "./ProjectShowcase";
 
 const ProjectsShowcase = ({ projects }) => {

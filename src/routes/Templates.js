@@ -11,6 +11,7 @@ import artistScreencap4 from "../images/artistScreencap4.webp";
 import designerScreencap from "../images/designerScreencap.webp";
 import ImageGallery from "../components/ImageGallery";
 import TextBreak from "../components/TextBreak";
+import { ArrowRightAlt } from "@mui/icons-material";
 
 const templates = [
     {
@@ -86,7 +87,7 @@ const Templates = () => {
                         </Typography>
                         <Box sx={{ display: "flex", justifyContent: "end" }}>
                             <Link
-                                to="/"
+                                to="/contact"
                                 onClick={() => {
                                     navigateToTop();
                                 }}
@@ -96,6 +97,7 @@ const Templates = () => {
                                         navigateToTop();
                                     }}
                                     variant="outlined"
+                                    endIcon={<ArrowRightAlt />}
                                 >
                                     Get Started
                                 </Button>

@@ -94,10 +94,6 @@ const Contact = () => {
                             }}
                         >
                             <Typography>
-                                Call: <strong>434 825-5038</strong>
-                            </Typography>
-                            <br />
-                            <Typography>
                                 Email: <strong>hello@fictionalweb.com</strong>
                             </Typography>
                             <br />

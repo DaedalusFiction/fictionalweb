@@ -119,7 +119,16 @@ const Header = () => {
                             textAlign: "end",
                         }}
                     >
-                        Websites that
+                        We create
+                    </Typography>
+                    <Typography
+                        variant="h3"
+                        component="p"
+                        sx={{
+                            textAlign: "end",
+                        }}
+                    >
+                        websites that
                     </Typography>
                     <Typography
                         variant="h3"

@@ -35,21 +35,21 @@ const projects = [
         image: joshScreencap,
         alt: "joshStehle website scrrenshot",
     },
-    {
-        name: "STREAMERIZE",
-        type: "Single-page App",
-        description:
-            "Single-page app to browse random twitch.tv streams with fewer than ten viewers. Uses Firebase and Netlify's serverless functions for a fully secure front-end application.",
-        technologies: [
-            "React",
-            "MUI",
-            "Netlify Serverless Functions",
-            "twitch.tv API",
-        ],
-        href: "https://streamerize.com",
-        image: streamerizeScreencap,
-        alt: "streamerize website scrrenshot",
-    },
+    // {
+    //     name: "STREAMERIZE",
+    //     type: "Single-page App",
+    //     description:
+    //         "Single-page app to browse random twitch.tv streams with fewer than ten viewers. Uses Firebase and Netlify's serverless functions for a fully secure front-end application.",
+    //     technologies: [
+    //         "React",
+    //         "MUI",
+    //         "Netlify Serverless Functions",
+    //         "twitch.tv API",
+    //     ],
+    //     href: "https://streamerize.com",
+    //     image: streamerizeScreencap,
+    //     alt: "streamerize website scrrenshot",
+    // },
     {
         name: "KDA PFDD",
         type: "Event Page",

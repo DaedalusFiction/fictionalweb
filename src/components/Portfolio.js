@@ -28,11 +28,11 @@ const projects = [
         href: "https://sicktooth.com",
         image: sicktoothScreencap,
     },
-    {
-        name: "STREAMERIZE",
-        href: "https://streamerize.com",
-        image: streamerizeScreencap,
-    },
+    // {
+    //     name: "STREAMERIZE",
+    //     href: "https://streamerize.com",
+    //     image: streamerizeScreencap,
+    // },
     {
         name: "KDA PFDD",
         href: "https://kdapfdd.net",

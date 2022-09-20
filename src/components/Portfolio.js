@@ -65,8 +65,8 @@ const Portfolio = () => {
                 >
                     <Container maxWidth="xl">
                         <Typography variant="h1" component="h2" align="center">
-                            Websites that{" "}
-                            <span className="text-accent">create meaning.</span>
+                            We create websites that{" "}
+                            <span className="text-accent">entertain.</span>
                         </Typography>
                     </Container>
                 </Grid>

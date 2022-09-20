@@ -44,7 +44,7 @@ const Showcase = () => {
                                 textAlign: { xs: "center", md: "end" },
                             }}
                         >
-                            Websites that{" "}
+                            We create websites that{" "}
                             <span className="text-accent">speak truth.</span>
                         </Typography>
                     </Box>

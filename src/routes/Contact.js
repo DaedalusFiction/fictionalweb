@@ -106,7 +106,14 @@ const Contact = () => {
                                     </Typography>
                                     <br />
                                     <FormControl fullWidth>
-                                        <InputLabel id="demo-simple-select-label">
+                                        <InputLabel
+                                            sx={{
+                                                "&.MuiInputLabel-root": {
+                                                    marginLeft: "0",
+                                                },
+                                            }}
+                                            id="demo-simple-select-label"
+                                        >
                                             Service
                                         </InputLabel>
                                         <Select
@@ -114,6 +121,7 @@ const Contact = () => {
                                             id="interest-select"
                                             value={interest}
                                             label=""
+                                            variant="standard"
                                             onChange={handleInterestChange}
                                         >
                                             <MenuItem value={"template"}>

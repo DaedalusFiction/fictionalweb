@@ -44,6 +44,11 @@ const Footer = ({ sections }) => {
                                             >
                                                 <Typography
                                                     sx={{
+                                                        "&:hover": {
+                                                            color: primary
+                                                                .palette.custom
+                                                                .accent,
+                                                        },
                                                         textTransform:
                                                             "uppercase",
                                                     }}

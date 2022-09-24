@@ -43,7 +43,7 @@ const Header = () => {
                 borderBottom: primary.border,
                 position: "sticky",
 
-                top: { xs: "0", md: "-23em" },
+                top: { xs: "0", lg: "-23em" },
 
                 backgroundColor: primary.palette.background.default,
                 zIndex: "5",
@@ -54,12 +54,12 @@ const Header = () => {
                     className="gradient"
                     item
                     xs={10}
-                    md={2}
+                    lg={2}
                     sx={{
                         display: "flex",
                         alignItems: "end",
                         paddingLeft: ".5em",
-                        paddingBottom: { xs: "0", md: "0.75rem" },
+                        paddingBottom: { xs: "0", lg: "0.75rem" },
                     }}
                 >
                     <Link
@@ -73,7 +73,7 @@ const Header = () => {
                                 variant="h3"
                                 component="p"
                                 sx={{
-                                    marginTop: { xs: "0", md: "10em" },
+                                    marginTop: { xs: "0", lg: "10em" },
                                 }}
                             >
                                 F
@@ -82,7 +82,7 @@ const Header = () => {
                                 variant="h3"
                                 component="p"
                                 sx={{
-                                    marginTop: { xs: "0", md: "10em" },
+                                    marginTop: { xs: "0", lg: "10em" },
                                 }}
                             >
                                 /
@@ -91,7 +91,7 @@ const Header = () => {
                                 variant="h3"
                                 component="p"
                                 sx={{
-                                    marginTop: { xs: "0", md: "10em" },
+                                    marginTop: { xs: "0", lg: "10em" },
                                     color: primary.palette.custom.accent,
                                 }}
                             >
@@ -103,11 +103,9 @@ const Header = () => {
                 <Grid
                     className="gradient"
                     item
-                    xs={0}
-                    md={4}
-                    lg={6}
+                    lg={4}
                     sx={{
-                        display: { xs: "none", md: "block" },
+                        display: { xs: "none", lg: "block" },
                         padding: primary.custom.spacing.paragraph,
                         paddingBottom: "0",
                     }}
@@ -147,8 +145,7 @@ const Header = () => {
                 <Grid
                     item
                     xs={2}
-                    md={6}
-                    lg={4}
+                    lg={6}
                     sx={{
                         display: "flex",
                         flexDirection: "column",
@@ -158,14 +155,14 @@ const Header = () => {
                 >
                     <Box
                         sx={{
-                            display: { xs: "none", md: "block" },
+                            display: { xs: "none", lg: "block" },
                         }}
                     >
                         <BlockQuote quote={quote} />
                     </Box>
                     <Box
                         sx={{
-                            display: { xs: "none", md: "flex" },
+                            display: { xs: "none", lg: "flex" },
                             marginBottom: ".5rem",
                         }}
                     >
@@ -174,7 +171,7 @@ const Header = () => {
                     <Box
                         className="flex-center"
                         sx={{
-                            display: { xs: "flex", md: "none" },
+                            display: { xs: "flex", lg: "none" },
                         }}
                     >
                         <IconButton
@@ -202,7 +199,7 @@ const Header = () => {
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
                             sx={{
-                                display: { xs: "block", md: "none" },
+                                display: { xs: "block", lg: "none" },
                             }}
                         >
                             {routes.map((route, index) => (

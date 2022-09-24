@@ -1,6 +1,6 @@
 import Editing from "../components/Editing";
 import Portfolio from "../components/Portfolio";
-import ServicesPreview from "../components/ServicesPreview";
+import ServicesShowcase from "../components/ServicesShowcase";
 import Showcase from "../components/Showcase";
 import TextBreak from "../components/TextBreak";
 
@@ -11,7 +11,7 @@ const Home = () => {
             <Showcase />
             <TextBreak />
             <Portfolio />
-            <ServicesPreview />
+            <ServicesShowcase isPreview />
             <TextBreak />
             <Editing />
             <TextBreak />

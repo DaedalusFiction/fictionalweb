@@ -9,7 +9,7 @@ const ImageGallery = ({ images, background }) => {
             <Grid container spacing={2}>
                 {images.map((image, index) => {
                     return (
-                        <Grid item key={index} xs={6} md={4}>
+                        <Grid item key={index} xs={6}>
                             <Box
                                 sx={{
                                     position: "relative",

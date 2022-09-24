@@ -28,11 +28,6 @@ const projects = [
         href: "https://sicktooth.com",
         image: sicktoothScreencap,
     },
-    // {
-    //     name: "STREAMERIZE",
-    //     href: "https://streamerize.com",
-    //     image: streamerizeScreencap,
-    // },
     {
         name: "KDA PFDD",
         href: "https://kdapfdd.net",
@@ -42,11 +37,6 @@ const projects = [
         name: "DESIGNER TEMPLATE",
         href: "https://fictionalweb-designer.netlify.app",
         image: designerScreencap,
-    },
-    {
-        name: "CUSTOM FORUM",
-        href: "https://customforum.netlify.app",
-        image: forumScreencap,
     },
 ];
 

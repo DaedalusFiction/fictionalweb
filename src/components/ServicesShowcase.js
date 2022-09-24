@@ -18,9 +18,10 @@ const ServicesShowcase = ({ services, isPreview }) => {
                                         display: "flex",
                                         flexDirection: "column",
                                         justifyContent: "space-between",
-                                        height: "100%",
                                         alignItems: "center",
+                                        height: "100%",
                                         padding: "4rem 1rem",
+                                        borderBottom: primary.border,
                                         borderLeft: {
                                             xs: "none",
                                             md:

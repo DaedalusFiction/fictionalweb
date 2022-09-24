@@ -4,7 +4,7 @@ import sicktoothScreencap from "../images/sicktoothScreencap.webp";
 import streamerizeScreencap from "../images/streamerizeScreencap.webp";
 import pfddScreencap from "../images/pfddScreencap.webp";
 import forumScreencap from "../images/forumScreencap.webp";
-import artistScreencap from "../images/artistScreencap.webp";
+import artistScreencap4 from "../images/artistScreencap4.webp";
 import designerScreencap from "../images/designerScreencap.webp";
 import { primary } from "../themes/primary";
 import BlockQuote from "./BlockQuote";
@@ -21,7 +21,7 @@ const projects = [
     {
         name: "ARTIST TEMPLATE",
         href: "https://fictionalweb-artist.netlify.app",
-        image: artistScreencap,
+        image: artistScreencap4,
     },
     {
         name: "SICKTOOTH",

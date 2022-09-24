@@ -86,3 +86,24 @@ img {
         rgba(167, 154, 82, 0.065)
     );
 }
+
+.fade {
+    animation: fadeInAndLeft 600ms ease-in-out;
+    animation-delay: 200ms;
+}
+
+.fade-slow {
+    animation: fadeInAndLeft 800ms ease-in-out;
+    animation-delay: 300ms;
+}
+
+@keyframes fadeInAndLeft {
+    0% {
+        transform: translateX(5px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}

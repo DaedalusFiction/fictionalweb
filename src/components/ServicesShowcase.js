@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { primary } from "../themes/primary";
 import { navigateToTop } from "../utils/utils";
 import CheckIcon from "@mui/icons-material/Check";
+import { ArrowRightAlt } from "@mui/icons-material";
 
 const ServicesShowcase = ({ services, isPreview }) => {
     return (
@@ -21,7 +22,7 @@ const ServicesShowcase = ({ services, isPreview }) => {
                                         alignItems: "center",
                                         height: "100%",
                                         padding: "4rem 1rem",
-                                        borderBottom: primary.border,
+
                                         borderLeft: {
                                             xs: "none",
                                             md:
@@ -125,6 +126,7 @@ const ServicesShowcase = ({ services, isPreview }) => {
                                                     navigateToTop();
                                                 }}
                                                 variant={service.button.variant}
+                                                endIcon={<ArrowRightAlt />}
                                             >
                                                 {service.button.text}
                                             </Button>

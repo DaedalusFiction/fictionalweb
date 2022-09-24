@@ -55,7 +55,7 @@ const Services = () => {
                         >
                             <Typography sx={{ maxWidth: "35ch" }}>
                                 If you're interested in taking one for a test
-                                drive, just drop us a line and we'll send you
+                                drive, just drop us a line and we'll hand you
                                 the keys!
                             </Typography>
                             <Link to="/contact">
@@ -71,7 +71,9 @@ const Services = () => {
                     </Box>
                 </Grid>
             </Grid>
-            <ServicesShowcase services={services} />
+            <Box sx={{ borderBottom: primary.border }}>
+                <ServicesShowcase services={services} />
+            </Box>
             <TextBreak />
         </Box>
     );

@@ -18,12 +18,13 @@ const Hero = () => {
             }}
         >
             <Box>
-                <Typography variant="h1" component="p">
+                <Typography className="fade" variant="h1" component="p">
                     FICTIONAL
                 </Typography>
                 <Typography
                     variant="h1"
                     component="p"
+                    className="fade-slow"
                     sx={{
                         lineHeight: ".85em",
                         color: primary.palette.custom.accent,
@@ -33,7 +34,7 @@ const Hero = () => {
                     WEB.
                 </Typography>
             </Box>
-            <Typography sx={{ textAlign: "end" }}>
+            <Typography className="fade-slow" sx={{ textAlign: "end" }}>
                 Creative sites for creative people.
             </Typography>
         </Box>

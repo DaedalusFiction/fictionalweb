@@ -63,7 +63,15 @@ const Footer = ({ sections }) => {
                                                 target="_BLANK"
                                                 rel="noreferrer"
                                             >
-                                                <Typography>
+                                                <Typography
+                                                    sx={{
+                                                        "&:hover": {
+                                                            color: primary
+                                                                .palette.custom
+                                                                .accent,
+                                                        },
+                                                    }}
+                                                >
                                                     {link.text}
                                                 </Typography>
                                             </a>

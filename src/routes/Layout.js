@@ -29,23 +29,19 @@ const sections = [
         ],
     },
     {
-        name: "Projects.",
+        name: "Templates.",
         items: [
             {
-                text: "The Forums",
+                text: "Artist",
+                href: "https://fictionalweb-artist.netlify.app",
+            },
+            {
+                text: "Designer",
+                href: "https://designer-template.netlify.app",
+            },
+            {
+                text: "Forum",
                 href: "https://customforum.netlify.app",
-            },
-            {
-                text: "Sicktooth",
-                href: "https://sicktooth.com",
-            },
-            {
-                text: "Streamerize",
-                href: "https://streamerize.com",
-            },
-            {
-                text: "The Great Road Trip",
-                href: "https://thegreatroadtrip.net",
             },
         ],
     },

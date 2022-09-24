@@ -84,7 +84,7 @@ const services = [
     },
     {
         title: "Custom",
-        price: "$1500",
+        price: "$1599",
         content:
             "Get a completely unique website, built from scratch just for you. We'll design a personalized theme and craft a website to suit your precise individual needs.",
         button: {

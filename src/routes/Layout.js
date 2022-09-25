@@ -37,7 +37,7 @@ const sections = [
             },
             {
                 text: "Designer",
-                href: "https://designer-template.netlify.app",
+                href: "https://fictionalweb-designer.netlify.app",
             },
             {
                 text: "Forum",
@@ -50,19 +50,19 @@ const sections = [
         items: [
             {
                 text: "Facebook",
-                href: "https://customforum.netlify.app",
+                href: "https://google.app",
             },
             {
                 text: "Twitter",
-                href: "https://sicktooth.com",
+                href: "https://google.com",
             },
             {
                 text: "Instagram",
-                href: "https://streamerize.com",
+                href: "https://google.com",
             },
             {
                 text: "LinkedIn",
-                href: "https://snackbarband.com",
+                href: "https://google.com",
             },
         ],
     },

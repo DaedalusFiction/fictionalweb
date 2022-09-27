@@ -36,6 +36,10 @@ const sections = [
                 href: "https://fictionalweb-artist.netlify.app",
             },
             {
+                text: "Academic",
+                href: "https://fictionalweb-academic.netlify.app",
+            },
+            {
                 text: "Designer",
                 href: "https://fictionalweb-designer.netlify.app",
             },

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { primary } from "../themes/primary";
 import { navigateToTop } from "../utils/utils";
 import forumScreencap from "../images/forumScreencap.webp";
-import artistScreencap from "../images/artistScreencap.webp";
+import academicScreencap from "../images/academicScreencap.webp";
 import artistScreencap2 from "../images/artistScreencap2.webp";
 import artistScreencap3 from "../images/artistScreencap3.webp";
 import artistScreencap4 from "../images/artistScreencap4.webp";
@@ -30,9 +30,9 @@ const templates = [
         image: artistScreencap3,
     },
     {
-        name: "ARTIST FOUR",
-        href: "https://fictionalweb-artist-four.netlify.app",
-        image: artistScreencap,
+        name: "ACADEMIC",
+        href: "https://fictionalweb-academic.netlify.app",
+        image: academicScreencap,
     },
 
     {

@@ -64,9 +64,10 @@ const Showcase = () => {
                 >
                     <Typography variant="body1" sx={{ maxWidth: "40ch" }}>
                         Our focus is on creating custom-built websites that are
-                        true to our clients and their vision. Whether you're a
-                        small business, a visual artist, or an author, we'll
-                        make sure that your website reflects who you are.
+                        true to our clients and their vision. Whether
+                        you&rsquo;re a small business, a visual artist, or an
+                        author, we&rsquo;ll make sure that your website reflects
+                        who you are.
                     </Typography>
                     <Box
                         sx={{

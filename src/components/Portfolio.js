@@ -92,7 +92,7 @@ const Portfolio = () => {
                         <Typography>
                             And because we maintain everything we create,
                             changing something is as easy as letting us know
-                            what you'd like changed.
+                            what you&rsquo;d like changed.
                         </Typography>
                         <br />
                     </Box>

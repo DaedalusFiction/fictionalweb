@@ -48,18 +48,19 @@ const About = () => {
                             }}
                         >
                             <Typography>
-                                The tagline "Websites that tell stories" is a
-                                little misleading--in the real world, everything
-                                tells a story.
+                                The tagline <em>websites that tell stories </em>
+                                is a little misleading--in the real world,
+                                everything tells a story.
                             </Typography>
                             <br />
                             <Typography>
-                                If you're a chef, your menu tells the story of
-                                your heritage and your taste. If you're a
-                                photographer, your portfolio tells the story of
-                                how you see the world and how that vision has
-                                changed and changes over time. If you're a
-                                novelist... Well, you just tell stories.
+                                If you&rsquo;re a chef, your menu tells the
+                                story of your heritage and your taste. If
+                                you&rsquo;re a photographer, your portfolio
+                                tells the story of how you see the world and how
+                                that vision has changed and changes over time.
+                                If you&rsquo;re a novelist... Well, you just
+                                tell stories.
                             </Typography>
                         </Box>
                     </Grid>
@@ -113,8 +114,8 @@ const About = () => {
                                         textAlign: { xs: "left", md: "right" },
                                     }}
                                 >
-                                    The truth is that there's no way to separate
-                                    your story from how you tell it.
+                                    The truth is that there&rsquo;s no way to
+                                    separate your story from how you tell it.
                                 </Typography>
                                 <br />
                                 <Typography

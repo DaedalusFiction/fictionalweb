@@ -10,4 +10,8 @@ const navigateToTop = (isHome) => {
     }
 };
 
-export { navigateToTop };
+const replaceDumbQuote = (s) => {
+    return s.replace("'", "’");
+};
+
+export { navigateToTop, replaceDumbQuote };

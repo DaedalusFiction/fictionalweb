@@ -8,6 +8,7 @@ import pfddScreencap from "../images/pfddScreencap.webp";
 import joshScreencap from "../images/joshScreencap.webp";
 import streamerizeScreencap from "../images/streamerizeScreencap.webp";
 import ProjectsShowcase from "../components/ProjectsShowcase";
+import { replaceDumbQuote } from "../utils/utils";
 
 const quote = {
     author: "William Faulkner",
@@ -29,32 +30,19 @@ const projects = [
         name: "JOSH STEHLE",
         type: "Author Portfolio",
         description:
-            "Portfolio page for author and autism advocate Josh Stehle. Handles newsletter sign-up through emailjs.com's browser API.",
+            "Portfolio page for author and autism advocate Josh Stehle. Handles newsletter sign-up through email.js.",
         technologies: ["React", "MUI", "Email.js"],
         href: "https://joshstehle.com",
         image: joshScreencap,
         alt: "joshStehle website scrrenshot",
     },
-    // {
-    //     name: "STREAMERIZE",
-    //     type: "Single-page App",
-    //     description:
-    //         "Single-page app to browse random twitch.tv streams with fewer than ten viewers. Uses Firebase and Netlify's serverless functions for a fully secure front-end application.",
-    //     technologies: [
-    //         "React",
-    //         "MUI",
-    //         "Netlify Serverless Functions",
-    //         "twitch.tv API",
-    //     ],
-    //     href: "https://streamerize.com",
-    //     image: streamerizeScreencap,
-    //     alt: "streamerize website scrrenshot",
-    // },
+
     {
         name: "KDA PFDD",
         type: "Event Page",
-        description:
-            "Event page providing information and sign-up to participate in the 2022 Kennedy's Disease Association's Patient-Focused Drug Development Conference and Study.",
+        description: replaceDumbQuote(
+            "Event page providing information and sign-up to participate in the 2022 Kennedy's Disease Association's Patient-Focused Drug Development Conference and Study."
+        ),
         technologies: ["React", "MUI", "Firebase", "OAuth 2.0"],
         href: "https://kdapfdd.net",
         image: pfddScreencap,
@@ -93,12 +81,13 @@ const Projects = () => {
                             >
                                 <Typography>
                                     Your website should continue to grow as you
-                                    do. That's why when you go with Fictional
-                                    Web, you aren't just getting a website.
+                                    do. That&rsquo;s why when you go with
+                                    Fictional Web, you aren&rsquo;t just getting
+                                    a website.
                                 </Typography>
                                 <br />
                                 <Typography>
-                                    You're getting a partnership.
+                                    You&rsquo;re getting a partnership.
                                 </Typography>
                             </Box>
                         </Box>

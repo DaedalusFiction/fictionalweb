@@ -39,7 +39,7 @@ const Showcase = () => {
                             sx={{ textAlign: { xs: "center", md: "end" } }}
                             gutterBottom
                         >
-                            Writer's Block?
+                            Writer&rsquo;s Block?
                         </Typography>
                         <Typography
                             variant="body1"
@@ -50,8 +50,8 @@ const Showcase = () => {
                         >
                             Our background in newspaper and fiction editing has
                             given us an ear for language. If you know what you
-                            want to tell people but aren't sure quite how to
-                            word it, we can help.
+                            want to tell people but aren&rsquo;t sure quite how
+                            to word it, we can help.
                         </Typography>
                     </Box>
 
@@ -89,9 +89,9 @@ const Showcase = () => {
                         }}
                     >
                         <Typography variant="h1">
-                            You won't know what{" "}
+                            You won&rsquo;t know what{" "}
                             <span className="text-accent">your story</span> is
-                            about until it's finished.
+                            about until it&rsquo;s finished.
                         </Typography>
                     </Box>
                 </Grid>

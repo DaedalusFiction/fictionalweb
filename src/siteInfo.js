@@ -1,3 +1,5 @@
+import { replaceDumbQuote } from "./utils/utils";
+
 const services = [
     {
         title: "Template",
@@ -85,8 +87,9 @@ const services = [
     {
         title: "Custom",
         price: "$1599",
-        content:
-            "Get a completely unique website, built from scratch just for you. We'll design a personalized theme and craft a website to suit your precise individual needs.",
+        content: replaceDumbQuote(
+            "Get a completely unique website, built from scratch just for you. We'll design a personalized theme and craft a website to suit your precise individual needs."
+        ),
         button: {
             href: "/contact",
             text: "Get started with custom",

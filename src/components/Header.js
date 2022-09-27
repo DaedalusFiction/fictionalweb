@@ -10,7 +10,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { primary } from "../themes/primary";
 import MenuIcon from "@mui/icons-material/Menu";
-import { navigateToTop } from "../utils/utils";
+import { navigateToTop, replaceDumbQuote } from "../utils/utils";
 import BlockQuote from "./BlockQuote";
 import NavBar from "./NavBar";
 
@@ -22,7 +22,9 @@ const routes = [
 ];
 
 const quote = {
-    body: "Good fiction's job is to comfort the disturbed and disturb the comfortable.",
+    body: replaceDumbQuote(
+        "Good fiction's job is to comfort the disturbed and disturb the comfortable."
+    ),
     author: "David Foster Wallace",
 };
 

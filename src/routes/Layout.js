@@ -54,19 +54,19 @@ const sections = [
         items: [
             {
                 text: "Facebook",
-                href: "https://google.app",
+                href: "https://www.facebook.com/people/Fictional-Web/100086293211231/",
             },
             {
                 text: "Twitter",
-                href: "https://google.com",
+                href: "https://twitter.com/fictionalweb",
             },
             {
                 text: "Instagram",
-                href: "https://google.com",
+                href: "https://www.instagram.com/fictionalweb/",
             },
             {
                 text: "LinkedIn",
-                href: "https://google.com",
+                href: "https://www.linkedin.com/in/davidjsorensen/",
             },
         ],
     },

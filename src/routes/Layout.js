@@ -44,8 +44,8 @@ const sections = [
                 href: "https://fictionalweb-designer.netlify.app",
             },
             {
-                text: "Forum",
-                href: "https://customforum.netlify.app",
+                text: "Blog",
+                href: "https://newlitmag.netlify.app",
             },
         ],
     },

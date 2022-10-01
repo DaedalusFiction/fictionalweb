@@ -8,12 +8,18 @@ import academicScreencap from "../images/academicScreencap.webp";
 import artistScreencap2 from "../images/artistScreencap2.webp";
 import artistScreencap3 from "../images/artistScreencap3.webp";
 import artistScreencap4 from "../images/artistScreencap4.webp";
+import blogScreencap from "../images/blogScreencap.webp";
 import designerScreencap from "../images/designerScreencap.webp";
 import ImageGallery from "../components/ImageGallery";
 import TextBreak from "../components/TextBreak";
 import { ArrowRightAlt } from "@mui/icons-material";
 
 const templates = [
+    {
+        name: "BLOG",
+        href: "https://newlitmag.netlify.app",
+        image: blogScreencap,
+    },
     {
         name: "ARTIST ONE",
         href: "https://fictionalweb-artist.netlify.app",

@@ -6,7 +6,7 @@ import { primary } from "../themes/primary";
 import sicktoothScreencap from "../images/sicktoothScreencap.webp";
 import pfddScreencap from "../images/pfddScreencap.webp";
 import joshScreencap from "../images/joshScreencap.webp";
-import streamerizeScreencap from "../images/streamerizeScreencap.webp";
+import cosimaScreencap from "../images/cosimaScreencap.webp";
 import ProjectsShowcase from "../components/ProjectsShowcase";
 import { replaceDumbQuote } from "../utils/utils";
 
@@ -25,6 +25,15 @@ const projects = [
         href: "https://sicktooth.com",
         image: sicktoothScreencap,
         alt: "sicktooth website screenshot",
+    },
+    {
+        name: "COSIMA HEWES",
+        type: "Artist Portfolio",
+        description: "Portfolio website for pastoral artist Cosima Hewes",
+        technologies: ["React", "MUI", "Firebase"],
+        href: "https://cosimahewes.com",
+        image: cosimaScreencap,
+        alt: "cosima hewes website screenshot",
     },
     {
         name: "JOSH STEHLE",

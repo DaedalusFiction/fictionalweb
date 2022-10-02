@@ -1,11 +1,9 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import sicktoothScreencap from "../images/sicktoothScreencap.webp";
-import streamerizeScreencap from "../images/streamerizeScreencap.webp";
 import pfddScreencap from "../images/pfddScreencap.webp";
-import forumScreencap from "../images/forumScreencap.webp";
-import artistScreencap4 from "../images/artistScreencap4.webp";
-import designerScreencap from "../images/designerScreencap.webp";
+import cosimaScreencap from "../images/cosimaScreencap.webp";
+import joshScreencap from "../images/joshScreencap.webp";
 import { primary } from "../themes/primary";
 import BlockQuote from "./BlockQuote";
 import { navigateToTop } from "../utils/utils";
@@ -19,9 +17,9 @@ const quote = {
 
 const projects = [
     {
-        name: "ARTIST TEMPLATE",
-        href: "https://fictionalweb-artist.netlify.app",
-        image: artistScreencap4,
+        name: "COSIMA HEWES",
+        href: "https://cosimahewes.com",
+        image: cosimaScreencap,
     },
     {
         name: "SICKTOOTH",
@@ -34,9 +32,9 @@ const projects = [
         image: pfddScreencap,
     },
     {
-        name: "DESIGNER TEMPLATE",
-        href: "https://fictionalweb-designer.netlify.app",
-        image: designerScreencap,
+        name: "JOSH STEHLE",
+        href: "https://joshstehle.com",
+        image: joshScreencap,
     },
 ];
 

@@ -10,8 +10,13 @@ import Projects from "./routes/Projects";
 import About from "./routes/About";
 import Templates from "./routes/Templates";
 import Services from "./routes/Services";
+import ReactGA from "react-ga";
 
 function App() {
+    // Google Analytics Set Up
+    const gaTrackingId = "G-N9QVT2Q8LE"; // enter your Tracking ID
+    ReactGA.initialize(gaTrackingId);
+    ReactGA.pageview("/");
     return (
         <ThemeProvider theme={primary}>
             <CssBaseline />

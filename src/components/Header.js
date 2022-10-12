@@ -16,8 +16,10 @@ import NavBar from "./NavBar";
 
 const routes = [
     { location: "Home", to: "/" },
-    { location: "About", to: "/about" },
+    { location: "Services", to: "/services" },
+    { location: "Templates", to: "/templates" },
     { location: "Projects", to: "/projects" },
+    { location: "About", to: "/about" },
     { location: "Contact", to: "/contact" },
 ];
 
